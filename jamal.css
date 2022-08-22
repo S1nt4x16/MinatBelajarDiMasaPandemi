@@ -1,0 +1,32 @@
+.header {
+  background-color: #e76f51;
+}
+
+.kopasus {
+  margin-left: 50px;
+}
+
+.judul {
+  padding-left: 5px;
+}
+
+.section {
+  background-color: #f4a261;
+  padding: 10px;
+}
+
+.pengertian-kiri {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.pengertian-kanan {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+}
+.pengertian {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+.contoh-1 {
+  text-align: center;
+}

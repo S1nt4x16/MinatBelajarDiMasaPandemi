@@ -1,7 +1,6 @@
-.header {
-  background-color: #e76f51;
+.body {
+  background-color: #f4a261;
 }
-
 .kopasus {
   margin-left: 50px;
 }
@@ -29,4 +28,7 @@
 }
 .contoh-1 {
   text-align: center;
+}
+.vector-2 {
+  margin-right: 100px;
 }

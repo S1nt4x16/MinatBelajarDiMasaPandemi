@@ -1,5 +1,6 @@
 .body {
   background-color: #f4a261;
+  cursor: url("cursor/cursor\ \(1\).cur"), auto;
 }
 .kopasus {
   margin-left: 50px;
@@ -34,5 +35,6 @@
 }
 
 .img {
-  align-items: center;
+  text-align: center;
+  height: 500px;
 }

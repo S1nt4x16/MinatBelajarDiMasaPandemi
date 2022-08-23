@@ -24,6 +24,6 @@ html {
     cursor:url('cursor/cursor\ \(1\).cur'), auto;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1366px), (max-height:400px) {
 
 }

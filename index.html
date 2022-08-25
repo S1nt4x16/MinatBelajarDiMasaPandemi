@@ -8,8 +8,78 @@
   <title>Welcome To Education Care</title>
   <link rel="shortcut icon" href="image/fav.png" type="image/x-icon">
   <link rel="stylesheet" href="vendor/bootstrap-5.2.0-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/animate.css/">
+  <link rel="stylesheet" href="vendor/fonts/icomoon/style.css">
   <link rel="stylesheet" href="valen.css">
+  <link rel="stylesheet" href="valen2.css">
+  <style>
+    .pcol {
+      padding-left: 875px;
+    }
+
+    .card-s {
+      width: 35rem;
+    }
+
+    .image {
+      margin-left: 120px;
+    }
+
+    .minat {
+      font-size: 60px;
+      line-height: 70px;
+    }
+
+    .imagee {
+      margin-left: 17px;
+    }
+
+    .as-con {
+      padding-top: 100px;
+      padding-bottom: 50px;
+      margin-top: 80px;
+    }
+
+    .sub-title {
+      font-size: 15px;
+    }
+
+    .titlee {
+      font-size: 50px;
+    }
+    
+    .baik {
+      font-size: 15px;
+    }
+
+
+    @media only screen and (max-width: 1024px) {
+      .pcol {
+        padding-left: 670px;
+      }
+
+      .card-s {
+        width: 25rem;
+      }
+
+      .image {
+        width: 600px;
+        height: 500px;
+        margin-left: 180px;
+      }
+
+      .minat {
+        font-size: 50px;
+        line-height: 70px;
+        margin: 180px;
+
+      }
+
+      .para {
+        font-size: 15px;
+        margin-left: 100px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -18,24 +88,24 @@
       <a class="img" href="."><img src="image/fav.png" width="70px"></a>
       &nbsp;
       &nbsp;
-      <a class="navbar-brand" href="." style="color: white;font-size: 27px;"><b>KOPASUS IT | RPL</b> </a>
+      <a class="navbar-brand" href="." style="color: white;"><b>KOPASUS IT | RPL</b> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 805px;">
+      <div class="collapse navbar-collapse pcol" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" style="color:white" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               <b>Solusi Masalah</b>
             </a>
-            <ul class="dropdown-menu" style="background-color: white;">
+            <ul class="dropdown-menu sz" style="background-color: white;">
               <li><a class="dropdown-item" style="background-color: white;color: #264653;"
                   href="self-learning.html">Solusi Belajar
                   Mandiri</a></li>
               <br>
-              <li><a class="dropdown-item" style="background-color: white;color: #264653;"
+              <li><a class="dropdown-item sz" style="background-color: white;color: #264653;"
                   href="technologies.html">Solusi Teknologi</a>
               </li>
             </ul>
@@ -46,14 +116,16 @@
   </nav>
   <br>
   <br>
-  <section class="container">
+
+  <section class="container" id="home">
     <div class="row">
       <div class="col-6">
-        <div class="title" style="color: white;font-size: 60px;line-height: 70px;">
-          <b> Minat Belajar <br> Di Masa Pandemi</b>
+        <div class="title" style="color: white;">
+          <b class="minat"> Minat Belajar Di Masa Pandemi</b>
         </div>
         <br>
-        <p style="color: white;"><b>Tidak bisa dipungkiri bahwa pandemi covid 19 sangat berdampak terutama di dunia
+        <p class="para" style="color: white;"><b>Tidak bisa dipungkiri bahwa pandemi covid 19 sangat berdampak terutama
+            di dunia
             pendidikan. Covid 19 sangat mempengaruhi minat belajar. Hal itu dikarenakan perubahan yang secara tiba tiba
             terjadi dimana kita dipaksa untuk melakukan segala sesuatu secara daring/online. Rumusan Berbagai Masalah
             Yang Dihadapi Banyak Pelajar, Dan Keresahan Serta Menumbuhkan Minat Belajar Mandiri Dan Sustainbility Dan
@@ -62,7 +134,7 @@
       </div>
       <div class="col-6">
         <div class="image">
-          <img src="image/section1.png" alt="" width="500px" height="400px" style="margin-left: 50px;">
+          <img src="image/section1.png" alt="">
         </div>
       </div>
     </div>
@@ -72,7 +144,7 @@
   <br>
   <br>
 
-  <section style="background-color: #E9C46A;">
+  <section id="mslh" style="background-color: #E9C46A;">
     <div class="container">
       <div class="row col-12">
         &nbsp;<div class="section-card" style="font-size: 30px;color: white;">
@@ -87,7 +159,7 @@
 
     <div class="row col-12">
       <div class="col-6 mt-5">
-        <div class="card" style="width: 35rem; margin-left: 20px;">
+        <div class="card card-s" style="margin-left: 50px;">
           <img src="image/card1.png" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Dalam pembelajaran online ini banyak kendala yang dihadapi para siswa terutama dalam
@@ -97,7 +169,7 @@
         </div>
       </div>
       <div class="col-6 mt-5">
-        <div class="card" style="width: 35rem; margin-left: 20px;">
+        <div class="card card-s" style="margin-left: 50px;">
           <img src="image/card2.png" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Untuk pembelajaran pasti membutuhkan aplikasi seperti Zoom dan Gmeet. Untuk hal itu
@@ -107,7 +179,7 @@
         </div>
       </div>
       <div class="col-6 mt-5">
-        <div class="card" style="width: 35rem; margin-left: 20px;">
+        <div class="card" style="width: 35rem; margin-left: 50px;">
           <img src="image/card3.png" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Pada faktor internal juga terdapat pengaruh yang sangat besar dalam pembelajaran secara
@@ -117,7 +189,7 @@
         </div>
       </div>
       <div class="col-6 mt-5">
-        <div class="card" style="width: 35rem; margin-left: 20px;">
+        <div class="card" style="width: 35rem; margin-left: 50px;">
           <img src="image/card4.png" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Dalam belajar online penyampaian materi menjadi tidak maksimal, dikarenakan tidak
@@ -127,7 +199,7 @@
         </div>
       </div>
       <div class="col-6 mt-5">
-        <div class="card" style="width: 35rem; margin-left: 20px;">
+        <div class="card" style="width: 35rem; margin-left: 50px;">
           <img src="image/card6.png" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Dan juga masalah yang terakhir yang sangat mempengaruhi adalah kurangnya minat dan
@@ -136,8 +208,8 @@
           </div>
         </div>
       </div>
-      <div class="col-6 mt-4">
-        <div class="card" style="width: 35rem; margin-left: 20px;">
+      <div class="col-6 mt-5">
+        <div class="card" style="width: 35rem; margin-left: 50px;">
           <img src="image/card5.png" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Sama saja dengan belajar online yang penyampaian materi menjadi tidak maksimal, belajar
@@ -149,10 +221,81 @@
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
   </section>
 
+<section id="sdm" style="background-color: #E76F51;">
+  &nbsp;
+<section class="container as-con" style="background-color:#2A9D8F;">
+    <div class="row">
+      <div class="col-6">
+        <div class="imagee">
+          <img src="image/section3.png" alt="">
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="sub-title">
+          <b>SDM Sumber Daya Manusia</b>
+        <div class="titlee" style="color: white;">
+          <b>Indonesia Yang <br> Lebih Baik Lagi</b>
+        </div>
+        </div>
+        <br>
+        <p class="baik" style="color: white;">
+          Baik didalam dan diluar negeri Sumber Daya Manusia (SDM) merupakan suatu kesatuan yang penting di indonesia yang masyarakatnya yang sangat banyak ini tentu daring atau belajar online ini sangat membebani, terutama bagi keluarga kecil menengah ke bawah yang memiliki banyak sekali anak sehingga kurang mampu membelikan anaknya gawai/handphone satu persatu karena sangat mahal. Sehingga memakai nya secara bergantian, oleh karena itu kita masyarakat Indonesia ini harus terus maju dalam hal Teknologi, SDM, Ekonomi, maupun hal lainnya supaya pendidikan di indonesia menjadi lebih maju dan tidak tertinggal.
+        </p>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+</section>
 
+<footer class="footer-59391 ft-e" style="background-color: #264653;">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-4">
+        <div class="site-logo">
+          <a href="#" style="color: white;">Kopasus IT | RPL</a>
+        </div>
+        &nbsp;
+      </div>
+      <div class="col-md-12 text-md-right">
+        <ul class="list-unstyled social-icons">
+          <li><a href="#" class="fb"><span class="icon-facebook"></span></a></li>
+          <li><a href="#" class="tw"><span class="icon-twitter"></span></a></li>
+          <li><a href="#" class="in"><span class="icon-instagram"></span></a></li>
+          <li><a href="#" class="be"><span class="icon-behance"></span></a></li>
+          <li><a href="#" class="dr"><span class="icon-dribbble"></span></a></li>
+          <li><a href="#" class="yt"><span class="icon-play"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-md-6 ">
+        <ul class="nav-links list-unstyled nav-left">
+          <li><a href="#mslh" style="color: white;">Masalah Yang Dihadapi</a></li>
+          <li><a href="#sdm" style="color: white;">Sumber Daya Manusia (SDM)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col ">
+        <div class="copyright">
+          <p><small style="color: white;">Copyright 2022. All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+</div>
+</footer>
+
+  <script src="vendor/js/jquery-3.3.1.min.js"></script>
+  <script src="vendor/js/popper.min.js"></script>
+  <script src="vendor/js/bootstrap.min.js"></script>
   <script src="vendor/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

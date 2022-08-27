@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome To Education Care</title>
+  <title>Minat Belajar Di Masa Pandemi</title>
   <link rel="shortcut icon" href="image/fav.png" type="image/x-icon">
   <link rel="stylesheet" href="vendor/bootstrap-5.2.0-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="vendor/fonts/icomoon/style.css">
@@ -16,12 +16,25 @@
       padding-left: 875px;
     }
 
+    .sec-1 {
+      margin-top: 110px;
+    }
+
     .card-s {
       width: 35rem;
     }
 
+    .card img {
+      width: 550px;
+      height: 400px;
+    }
+
+    .card-title {
+      font-size: 20px;
+    }
+
     .image {
-      margin-left: 120px;
+      margin-left: 80px;
     }
 
     .minat {
@@ -30,7 +43,7 @@
     }
 
     .imagee {
-      margin-left: 17px;
+      margin-left: 12px;
     }
 
     .as-con {
@@ -41,16 +54,59 @@
 
     .sub-title {
       font-size: 15px;
+      margin-top: 10px;
     }
 
     .titlee {
       font-size: 50px;
+      margin-top: 45px;
+
     }
-    
+
     .baik {
       font-size: 15px;
     }
 
+    .tema {
+      margin-left: 5px;
+      font-size: 30px;
+    }
+
+    #mslh {
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: all 2s ease;
+    }
+
+    #mslh.active {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+    #sdm {
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: all 2s ease;
+    }
+
+    #sdm.active {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+    #cardrev {
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: all 1s ease;
+    }
+
+    #cardrev.active {
+      transform: translateY(0px);
+      opacity: 1;
+    }
 
     @media only screen and (max-width: 1024px) {
       .pcol {
@@ -114,27 +170,26 @@
       </div>
     </div>
   </nav>
-  <br>
-  <br>
 
   <section class="container" id="home">
     <div class="row">
-      <div class="col-6">
+      <div class="col-6 sec-1">
+        <div class="tema" style="color: white;"><b>Education Care</b></div>
+        &nbsp;
         <div class="title" style="color: white;">
           <b class="minat"> Minat Belajar Di Masa Pandemi</b>
         </div>
         <br>
-        <p class="para" style="color: white;"><b>Tidak bisa dipungkiri bahwa pandemi covid 19 sangat berdampak terutama
-            di dunia
-            pendidikan. Covid 19 sangat mempengaruhi minat belajar. Hal itu dikarenakan perubahan yang secara tiba tiba
-            terjadi dimana kita dipaksa untuk melakukan segala sesuatu secara daring/online. Rumusan Berbagai Masalah
-            Yang Dihadapi Banyak Pelajar, Dan Keresahan Serta Menumbuhkan Minat Belajar Mandiri Dan Sustainbility Dan
-            Pemahaman Materi Dan Ilustrasinya
+        <p class="para" style="color: white;"><b>Covid 19 sangat mempengaruhi minat belajar. Hal itu dikarenakan
+            perubahan yang secara tiba tiba
+            terjadi dimana kita dipaksa untuk melakukan segala sesuatu secara daring/online. Menumbuhkan Minat Belajar
+            Mandiri Dan Sustainbility Serta
+            Pemahaman Materi
           </b></p>
       </div>
       <div class="col-6">
         <div class="image">
-          <img src="image/section1.png" alt="">
+          <img src="image/section1.png" alt="" height="500px">
         </div>
       </div>
     </div>
@@ -158,65 +213,91 @@
     </div>
 
     <div class="row col-12">
-      <div class="col-6 mt-5">
+      <div class="col-6 mt-5" id="cardrev">
         <div class="card card-s" style="margin-left: 50px;">
           <img src="image/card1.png" class="card-img-top" alt="...">
           <div class="card-body">
+            <div class="card-title"><b>
+                <center>Ekonomi Keluarga</center>
+              </b></div>
+            &nbsp;
             <p class="card-text">Dalam pembelajaran online ini banyak kendala yang dihadapi para siswa terutama dalam
               kuota internet karena kuota yang lumayan mahal dan terus menerus dibeli ataupun menggunakan wifi yang
               harus dibayar tiap bulan. Yang lumayan membebani ekonomi keluarga</p>
           </div>
         </div>
       </div>
-      <div class="col-6 mt-5">
+      <div class="col-6 mt-5" id="cardrev">
         <div class="card card-s" style="margin-left: 50px;">
           <img src="image/card2.png" class="card-img-top" alt="...">
           <div class="card-body">
+            <div class="card-title"><b>
+                <center>Jaringan</center>
+              </b></div>
+            &nbsp;
             <p class="card-text">Untuk pembelajaran pasti membutuhkan aplikasi seperti Zoom dan Gmeet. Untuk hal itu
               pasti membutuhkan jaringan yang stabil atapun mempunyai akses wifi pribadi jadi cukup berat bagi yang
               menggunakan kuota internet.</p>
           </div>
         </div>
       </div>
-      <div class="col-6 mt-5">
+      <div class="col-6 mt-5" id="cardrev">
         <div class="card" style="width: 35rem; margin-left: 50px;">
           <img src="image/card3.png" class="card-img-top" alt="...">
           <div class="card-body">
+            <div class="card-title"><b>
+                <center>Faktor Internal</center>
+              </b></div>
+            &nbsp;
             <p class="card-text">Pada faktor internal juga terdapat pengaruh yang sangat besar dalam pembelajaran secara
               daring apabila ada orangtua yang kena Pemutusan Hubungan Kerja (PHK). Hal itu menambahkan aura negatif
               bagi keberlangsungan belajar online di rumah masing-masing siswa sekolah.</p>
           </div>
         </div>
       </div>
-      <div class="col-6 mt-5">
+      <div class="col-6 mt-5" id="cardrev">
         <div class="card" style="width: 35rem; margin-left: 50px;">
           <img src="image/card4.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Dalam belajar online penyampaian materi menjadi tidak maksimal, dikarenakan tidak
-              terjadi tatap muka dan interaksi antara guru dan materi. Sehingga murid sulit memahami materi yang
-              disampaikan.</p>
+            <div class="card-title"><b>
+                <center>Penyampaian Materi</center>
+              </b></div>
+            &nbsp;
+            <p class="card-text">Dalam pembelajaran secara daring/online penyampaian materi menjadi tidak maksimal,
+              dikarenakan tidak
+              terjadi pertemuan antara guru dan murid serta interaksi yang dilakukan antara guru dan murid. Sehingga
+              murid sulit memahami materi yang
+              disampaikan. </p>
           </div>
         </div>
       </div>
-      <div class="col-6 mt-5">
-        <div class="card" style="width: 35rem; margin-left: 50px;">
-          <img src="image/card6.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Dan juga masalah yang terakhir yang sangat mempengaruhi adalah kurangnya minat dan
-              kesadaran akan belajar mandiri dan sustainbility dalam pemahaman materi, atau membentuk suatu kelompok
-              dengan tujuan belajar secara berkelompok untuk pembelajaran yang menyenangkan dan tidak membosankan.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 mt-5">
+      <div class="col-6 mt-5" id="cardrev">
         <div class="card" style="width: 35rem; margin-left: 50px;">
           <img src="image/card5.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Sama saja dengan belajar online yang penyampaian materi menjadi tidak maksimal, belajar
-              online juga lebih banyak tugas yang diberikan daripada materi dan pemahaman yang diberikan sehingga murid
-              yang mengerjakan tugas hanya diberi tugas tanpa memahami materi yang diberikan untuk tugas tersebut.
-              Sehingga banyak siswa hanya melihat jawaban dan mencari jawaban di Google dan aplikasi aplikasi lain dan
-              tidak bertujuan untuk memahami materi hanya untuk melihat jawaban saja.</p>
+            <div class="card-title"><b>
+                <center>Pemberian Tugas</center>
+              </b></div>
+            &nbsp;
+            <p class="card-text">Belajar
+              online juga lebih banyak tugas yang diberikan daripada materi dan pemahaman yang diberikan. Sehingga murid
+              yang mengerjakan tugas hanya mengerjakan tugas tanpa memahami materi yang diberikan. Hanya melihat jawaban
+              nya saja
+              yang dicari di Google dan aplikasi lainnya</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 mt-5" id="cardrev">
+        <div class="card" style="width: 35rem; margin-left: 50px;">
+          <img src="image/card6.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="card-title"><b>
+                <center>Kurangnya Minat Belajar</center>
+              </b></div>
+            &nbsp;
+            <p class="card-text">Masalah terakhir yang sering dihadapi adalah kurangnya minat dan
+              kesadaran akan belajar mandiri dan sustainbility dalam pemahaman materi,atau membentuk kelompok
+              dengan tujuan menciptakan pembelajaran yang menyenangkan dan tidak membosankan.</p>
           </div>
         </div>
       </div>
@@ -226,76 +307,142 @@
     <br>
   </section>
 
-<section id="sdm" style="background-color: #E76F51;">
-  &nbsp;
-<section class="container as-con" style="background-color:#2A9D8F;">
-    <div class="row">
-      <div class="col-6">
-        <div class="imagee">
-          <img src="image/section3.png" alt="">
+  <section id="sdm" style="background-color: #E76F51;">
+    &nbsp;
+    <section class="container as-con" style="background-color:#2A9D8F;">
+      <div class="row">
+        <div class="col-6">
+          <div class="imagee">
+            <img src="image/section3.png" alt="" height="500px">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="sub-title">
+            <b>SDM Sumber Daya Manusia</b>
+            <div class="titlee" style="color: white;">
+              <b>Indonesia Yang <br> Lebih Baik Lagi</b>
+            </div>
+            <br>
+          </div>
+          <br>
+          <p class="baik" style="color: white;">
+            Baik didalam dan diluar negeri Sumber Daya Manusia (SDM) merupakan suatu kesatuan yang penting di indonesia
+            yang masyarakatnya yang sangat banyak ini tentu daring atau belajar online ini sangat membebani, terutama
+            bagi keluarga kecil menengah ke bawah yang memiliki banyak sekali anak sehingga kurang mampu membelikan
+            anaknya gawai/handphone satu persatu karena sangat mahal. Sehingga memakai nya secara bergantian, oleh
+            karena itu kita masyarakat Indonesia ini harus terus maju dalam hal Teknologi, SDM, Ekonomi, maupun hal
+            lainnya supaya pendidikan di indonesia menjadi lebih maju dan tidak tertinggal.
+          </p>
         </div>
       </div>
-      <div class="col-6">
-        <div class="sub-title">
-          <b>SDM Sumber Daya Manusia</b>
-        <div class="titlee" style="color: white;">
-          <b>Indonesia Yang <br> Lebih Baik Lagi</b>
-        </div>
-        </div>
-        <br>
-        <p class="baik" style="color: white;">
-          Baik didalam dan diluar negeri Sumber Daya Manusia (SDM) merupakan suatu kesatuan yang penting di indonesia yang masyarakatnya yang sangat banyak ini tentu daring atau belajar online ini sangat membebani, terutama bagi keluarga kecil menengah ke bawah yang memiliki banyak sekali anak sehingga kurang mampu membelikan anaknya gawai/handphone satu persatu karena sangat mahal. Sehingga memakai nya secara bergantian, oleh karena itu kita masyarakat Indonesia ini harus terus maju dalam hal Teknologi, SDM, Ekonomi, maupun hal lainnya supaya pendidikan di indonesia menjadi lebih maju dan tidak tertinggal.
-        </p>
-      </div>
-    </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
   </section>
-  <br>
-  <br>
-  <br>
-  <br>
-</section>
 
-<footer class="footer-59391 ft-e" style="background-color: #264653;">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-4">
-        <div class="site-logo">
-          <a href="#" style="color: white;">Kopasus IT | RPL</a>
+  <footer class="footer-59391 ft-e" style="background-color: #264653;">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <div class="site-logo">
+            <a href="#" style="color: white;"><img src="image/fav.png" width="70px" alt=""> Kopasus IT | RPL</a>
+          </div>
+          &nbsp;
         </div>
-        &nbsp;
-      </div>
-      <div class="col-md-12 text-md-right">
-        <ul class="list-unstyled social-icons">
-          <li><a href="#" class="fb"><span class="icon-facebook"></span></a></li>
-          <li><a href="#" class="tw"><span class="icon-twitter"></span></a></li>
-          <li><a href="#" class="in"><span class="icon-instagram"></span></a></li>
-          <li><a href="#" class="be"><span class="icon-behance"></span></a></li>
-          <li><a href="#" class="dr"><span class="icon-dribbble"></span></a></li>
-          <li><a href="#" class="yt"><span class="icon-play"></span></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row mb-5">
-      <div class="col-md-6 ">
-        <ul class="nav-links list-unstyled nav-left">
-          <li><a href="#mslh" style="color: white;">Masalah Yang Dihadapi</a></li>
-          <li><a href="#sdm" style="color: white;">Sumber Daya Manusia (SDM)</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col ">
-        <div class="copyright">
-          <p><small style="color: white;">Copyright 2022. All Rights Reserved.</small></p>
+        <div class="col-md-12 text-md-right">
+          <ul class="list-unstyled social-icons">
+            <li><a href="#" class="fb"><span class="icon-facebook"></span></a></li>
+            <li><a href="#" class="tw"><span class="icon-twitter"></span></a></li>
+            <li><a href="#" class="in"><span class="icon-instagram"></span></a></li>
+            <li><a href="#" class="yt"><span class="icon-play"></span></a></li>
+          </ul>
         </div>
       </div>
+      <div class="row mb-5">
+        <div class="col-md-6 ">
+          <ul class="nav-links list-unstyled nav-left">
+            <li><a href="#mslh" style="color: white;">Masalah Yang Dihadapi</a></li>
+            <li><a href="#sdm" style="color: white;">Sumber Daya Manusia (SDM)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ">
+          <div class="copyright">
+            <p><small style="color: white;">Copyright 2022. All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-</footer>
+  </footer>
+
 
   <script src="vendor/js/jquery-3.3.1.min.js"></script>
   <script src="vendor/js/popper.min.js"></script>
   <script src="vendor/js/bootstrap.min.js"></script>
   <script src="vendor/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll('#mslh');
+
+      for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll('#sdm');
+
+      for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll('#cardrev');
+
+      for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
 </body>
+
 </html>

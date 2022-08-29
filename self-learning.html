@@ -7,23 +7,571 @@
     <title>Document</title>
     <link rel="stylesheet" href="vendor/bootstrap-5.2.0-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="jamal.css" />
-    <!-- <link rel="stylesheet" href="vendor/animate.css/animate.min.css"> -->
+    <link rel="stylesheet" href="vendor/animate.css/animate.min.css"/>
     <style>
+      .pengertian-belajar-mandiri{
+        margin-left: 40px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif; 
+      }
+      .pengertian-pilih-sumber{
+        margin-left: 40px;
+        font-size: 20px;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif; 
+      }
+      .pengertian-bagikan-pengetahuan{
+        margin-left: 40px;
+        font-size: 20px;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif; 
+      }
+      .pengertian-terapkan-apa{
+        margin-left: 40px;
+        font-size: 20px;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif; 
+      }
+      .teknik-belajar{
+        text-align: center;
+        font-size: 60px;
+      }
+      .pengertian-teknik-belajar{
+        font-size: 20px;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif; 
+      }
+      .pengertian-membaca{
+        margin-left: 40px;
+        font-size: 20px;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif; 
+      }
+      .pengertian-video-pendidikan{
+        margin-left: 40px;
+        font-size: 20px;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif; 
+      }
+      .pengertian-pembelajaran-menggunakan{
+        margin-left: 40px;
+        font-size: 20px;
+        padding-top: 20px;
+        font-family: Arial, Helvetica, sans-serif; 
+      }
       .navbar-collapse {
         flex-grow: 0;
       }
       .title-long{
         margin-top: -30px;
       }
+      .vector-8 {
+        height: 600px;
+      }
+      .belajar-mandiri {
+        margin-left: 40px; 
+        font-size: 70px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        margin-top: 200px;
+      }
+      .vector-1{
+        height: 800px;
+      }
+      .pilih-sumber{
+        margin-left: 40px; 
+        font-size: 70px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        margin-top: 200px;
+        line-height: 80px;
+      }
+      .vector-4{
+        height: 600px;
+      }
+      .bagikan-pengetahuan{
+        margin-left: 40px; 
+        font-size: 70px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        margin-top: 100px;
+        line-height: 80px;
+      }
+      .vector-2{
+        height: 550px;
+        padding-bottom: 100px;
+        padding-left: 200px;
+      }
+      .terapkan-apa{
+        margin-left: 40px; 
+        font-size: 70px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        margin-top: 50px;
+        line-height: 80px;
+      }
+      .vector-5{
+        height: 700px;
+        margin-left: 50px;
+        padding-bottom: 150px;
+      }
+      .membaca{
+        margin-left: 40px; 
+        font-size: 70px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        padding-top: 100px;
+      }
+      .vector-3{
+        height: 500px;
+        padding-left: 70px;
+      }
+      .video-pendidikan{
+        margin-left: 40px; 
+        font-size: 70px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        padding-top: 70px;
+      }
+      .vector-7{
+        height: 700px;
+        padding-top: 100px;
+        margin-left: 30px;
+      }
+      .pembelajaran-menggunakan{
+        margin-left: 40px; 
+        font-size: 70px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        padding-top: 150px;
+        line-height: 80px;
+      }
+      .pengertian{
+        font-size: 22px;
+        margin-left: 43px;
+        font-family: Arial, Helvetica, sans-serif; 
+      }
+
+      @media only screen and (max-width:1440px) {
+        .vector-8 {
+          height: 500px;
+          margin-top: 50px;
+        }
+        .belajar-mandiri {
+          margin-left: 40px; 
+          font-size: 60px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          margin-top: 100px;
+        }
+        .vector-1{
+          height: 700px;
+          margin-top: 50px;
+        }
+        .pilih-sumber{
+          margin-left: 40px; 
+          font-size: 60px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          margin-top: 200px;
+          line-height: 60px;
+        }
+        .vector-4{
+          height: 450px;
+          margin-top: 130px;
+        }
+        .bagikan-pengetahuan{
+          margin-left: 40px; 
+          font-size: 50px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 60px;
+        }
+        .vector-2{
+          height: 470px;
+          margin-top: 100px
+        }
+        .terapkan-apa{
+          margin-left: 40px; 
+          font-size: 50px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          margin-top: 50px;
+          line-height: 60px;
+        }
+        .vector-5{
+          height: 600px;
+          margin-top: 50px;
+        }
+        .membaca{
+          margin-left: 40px; 
+          font-size: 60px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          padding-top: 100px;
+        }
+        .vector-3{
+          height: 500px;
+          margin-top: 120px;
+        }
+        .video-pendidikan{
+          margin-left: 40px; 
+          font-size: 60px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          padding-top: 70px;
+        }
+        .vector-7{
+          height: 600px;
+          margin-top: 150px;
+        }
+        .pembelajaran-menggunakan{
+          margin-left: 40px; 
+          font-size: 50px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 60px;
+        }
+
+      }
+      @media only screen and (max-width:1024px) {
+        .pengertian{
+          font-size: 15px;
+          line-height: 20px;
+          font-family: Arial, Helvetica, sans-serif; 
+        }
+        .vector-8 {
+          height: 400px;
+          margin-top: 30px;
+        }
+        .belajar-mandiri {
+        margin-left: 40px; 
+        font-size: 37px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        margin-top: 100px;
+        }
+        .vector-1{
+          height: 500px;
+          margin-top: -80px;
+        }
+        .pilih-sumber{
+          margin-left: 40px; 
+          font-size: 37px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 40px;
+          margin-top: 90px;
+        }
+        .vector-4{
+          height: 300px;
+          margin-top: 100px;
+        }
+        .bagikan-pengetahuan{
+          margin-left: 40px; 
+          font-size: 40px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 40px;
+        }
+        .vector-2{
+          height: 380px;
+          margin-top: -100px;
+          padding-left: 70px;
+        }
+        .terapkan-apa{
+          margin-left: 40px; 
+          font-size: 40px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 40px;
+          margin-top: -100px;
+        }
+        .vector-5{
+          height: 450px;
+          margin-top: 50px;
+        }
+        .membaca{
+          margin-left: 40px; 
+          font-size: 60px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          padding-top: 100px;
+        }
+        .vector-3{
+          height: 300px;
+          margin-top: -75px;
+        }
+        .video-pendidikan{
+          margin-left: 40px; 
+          font-size: 60px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          padding-top: 70px;
+          line-height: 60px;
+          padding-bottom: 15px;
+          margin-top: -150px;
+        }
+        .vector-7{
+          height: 400px;
+          margin-top: -50px;
+        }
+        .pembelajaran-menggunakan{
+          margin-left: 40px; 
+          font-size: 40px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 40px;
+          margin-top: -90px;
+        }
+        .col-lg-3 {
+            flex: 0 0 auto;
+            width: 55%;
+        }
+      }
+
+      @media only screen and (max-width:768px) {
+        .pengertian{
+          font-size: 12px;
+          line-height: 20px;
+          font-family: Arial, Helvetica, sans-serif; 
+        }
+        .vector-8 {
+          height: 300px;
+          margin-top: 130px;
+        }
+        .belajar-mandiri {
+        margin-left: 40px; 
+        font-size: 37px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        margin-top: 100px;
+        line-height: 40px;
+        padding-bottom: 10px;
+        }
+        .vector-1{
+          height: 350px;
+          margin-top: -80px;
+        }
+        .pilih-sumber{
+          margin-left: 40px; 
+          font-size: 37px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 40px;
+          margin-top: -30px;
+        }
+        .vector-4{
+          height: 200px;
+          margin-top: 100px;
+        }
+        .bagikan-pengetahuan{
+          margin-left: 40px;
+          font-size: 20px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 25px;
+          margin-top: 100px;
+          padding-right: 120px;
+        }
+        .vector-2{
+          height: 300px;
+          margin-top: -20px;
+          padding-left: 30px;
+        }
+        .terapkan-apa{
+          margin-left: 40px; 
+          font-size: 40px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 40px;
+          margin-top: -100px;
+        }
+        .vector-5{
+          height: 350px;
+          margin-top: 50px;
+        }
+        .membaca{
+          margin-left: 40px; 
+          font-size: 50px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          margin-top: -70px;
+        }
+        .vector-3{
+          height: 200px;
+          margin-top: 0px;
+          margin-right: 20px;
+        }
+        .video-pendidikan{
+          margin-left: 40px; 
+          font-size: 30px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 35px;
+          margin-top: -120px;
+        }
+        .vector-7{
+          height: 300px;
+          margin-top: -50px;
+        }
+        .pembelajaran-menggunakan{
+          margin-left: 40px; 
+          font-size: 20px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 25px;
+          margin-top: -100px;
+        }
+        .col-lg-3 {
+            flex: 0 0 auto;
+            width: 55%;
+        }
+      }
+
+      @media only screen and (max-width:375px) {
+        .pengertian-belajar-mandiri{
+          margin-left: 5px;
+          text-align: center;
+          margin-left: 0px;
+          font-family: Arial, Helvetica, sans-serif; 
+        }
+        .vector-8 {
+          height: 230px;  
+          margin-top: -10px;
+        }
+        .belajar-mandiri {
+          font-size: 25px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          margin-top: 30px;
+          line-height: 40px;
+          padding-bottom: 10px;
+          text-align: center;
+          margin-left: 0;
+        }
+        .pengertian-pilih-sumber{
+          font-size: 12px;
+          line-height: 20px;
+          text-align: center;
+          margin-left: 0px;
+          font-family: Arial, Helvetica, sans-serif; 
+        }
+        .vector-1{
+          height: 250px;
+          margin-top: 20px;
+          margin-left: 40px;
+        }
+        .pilih-sumber{
+          font-size: 25px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 40px;
+          text-align: center;
+          margin-left: -10px;
+        }
+        .pengertian-bagikan-pengetahuan{
+          font-size: 12px;
+          line-height: 20px;
+          text-align: center;
+          padding-top: 20px;
+          margin-left: 0px;
+          padding-right: 0px;
+          font-family: Arial, Helvetica, sans-serif; 
+        }
+        .vector-4{
+          height: 190px;
+        }
+        .bagikan-pengetahuan{
+          font-size: 20px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 25px;
+          text-align: center;
+          margin-top: -10px;
+          margin-left: 0px;
+          padding-right: 0px;
+        }
+        .pengertian-terapkan-apa{
+          text-align: center;
+          padding-top: 20px;
+          margin-left: 0px;
+          font-size: 12px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .vector-2{
+          padding-top: 50px;
+          margin-right: 0px;
+          padding-bottom: 50px;
+          text-align: center;
+        }
+        .terapkan-apa{
+          padding-top: 100px;
+          font-size: 30px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 40px;
+          margin-left: 0;
+          text-align: center;
+        }
+        .teknik-belajar{
+          text-align: center;
+          padding-bottom: 20px;
+          font-size: 30px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 40px;
+          padding-top: 70px;
+        }
+        .pengertian-teknik-belajar{
+          font-size: 12px; 
+          font-family: Arial, Helvetica, sans-serif; 
+        }
+        .pengertian-membaca{
+          text-align: center;
+          font-size: 12px; 
+          font-family: Arial, Helvetica, sans-serif;
+          margin-left: 0px; 
+        }
+        .vector-5{
+          height: 200px;
+          padding-bottom: 0px;
+          text-align: center;
+          margin-left: 30px;
+        }
+        .membaca{
+          text-align: center;
+          font-size: 20px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          margin-top: -50px;
+          margin-left: 0;
+        }
+        .pengertian-video-pendidikan{
+          text-align: center;
+          font-size: 12px; 
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          margin-left: 0;
+          padding-bottom: 20px;
+        }
+        .vector-3{
+          height: 300px;
+          text-align: center;
+          padding-bottom: 100px;
+          padding-left: 0px;
+          margin-left: 20px;
+        }
+        .video-pendidikan{
+          font-size: 20px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 35px;
+          text-align: center;
+          margin-top: 0px;
+          padding-bottom: 0;
+          margin-left: 0;
+        }
+        .pengertian-pembelajaran-menggunakan{
+          text-align: center;
+          font-size: 12px; 
+          font-family: Arial, Helvetica, sans-serif;
+          margin-left: 0px;
+        }
+        .vector-7{
+          height: 250px;
+          padding-top: 100px;
+          text-align: center;
+          margin-left: 60px;
+        }
+        .pembelajaran-menggunakan{
+          font-size: 20px; 
+          font-family: Arial, Helvetica, sans-serif; 
+          line-height: 25px;
+          text-align: center;
+          padding-bottom: 10px;
+          margin-left: 0px;
+        }
+        .col-lg-3 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+      }
+
     </style>
   </head>
   <body>
     <nav class="header navbar navbar-expand-lg">
       <div class="container-fluid">
         <div>
-          <a style="margin-left: 25px" href="index.html"><img src="img/kopasus.png" alt="" width="80px" height="80px" /></a>
+          <a class="animate__animated animate__bounceInDown" style="margin-left: 25px" href="index.html"><img src="img/kopasus.png" alt="" width="80px" height="80px" /></a>
           &nbsp;
-          <a class="judul navbar-brand" style="margin-left: -10px" href="index.html"><b>Kopasus IT | RPL</b></a>
+          <a class="judul navbar-brand animate__animated animate__bounceInDown" style="margin-left: -10px" href="index.html"><b>Kopasus IT | RPL</b></a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,7 +579,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 20px">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px"><b>Selengkapnya</b></a>
+              <a class="nav-link dropdown-toggle animate__animated animate__bounceInDown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px"><b>Selengkapnya</b></a>
               <ul class="dropdown-menu" style="margin-top: 5px">
                 <li><a class="dropdown-item" href="self-learning.html">Solusi Belajar Mandiri</a></li>
                 <li><a class="dropdown-item" href="technologies.html">Solusi Teknologi</a></li>
@@ -42,195 +590,169 @@
       </div>
     </nav>
     <div class="body">
-      <section style="background-color: #e9c46a" class="container-fluid">
+      <section style="background-color: #E76F51" class="container-fluid">
         <div class="row">
-          <div class="col" style="margin-left: 40px; font-size: 70px; font-family: Arial, Helvetica, sans-serif; margin-top: 200px">BELAJAR MANDIRI</div>
-        </div>
-        <div class="row" style="padding-top: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin-left: 33px; margin-right: 20px">
-          <div class="col-sm-12 col-lg-6">
-            Belajar mandiri adalah pendekatan belajar di mana individu berusaha untuk mengidentifikasi kebutuhan belajar mereka sendiri, menetapkan tujuan belajar, menemukan sumber daya yang diperlukan, dan mengevaluasi pengetahuan mereka
-            sendiri. Jika Anda menjelajahi dunia belajar mandiri seperti banyak siswa dan profesional lainnya yang terkurung di rumah karena pandemi, Berikut beberapa contoh di bawah ini:
-          </div>
-          <div class="col-sm-12 col-lg-6">
-            <img style="height: 600px; margin-top: -250px; vertical-align: middle" src="img/vector-8.png" alt="" />
-          </div>
-        </div>
-      </section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 110 1440 320">
-        <path
-          fill="#E9C46A"
-          fill-opacity="1"
-          d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,128C672,117,768,139,864,138.7C960,139,1056,117,1152,122.7C1248,128,1344,160,1392,176L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
-      <section class="container-fluid">
-        <div class="row">
-          <div class="col" style="text-align: left; margin-left: 40px; font-size: 70px; margin-top: -100px">
-            Pilih Sumber Belajar 
-            <div class="title-long">
-              Kredibel
+          <div class="col-sm">
+            <div class="row">
+              <div class="col-sm">
+                <div class="belajar-mandiri col animate__animated animate__fadeInDown">BELAJAR MANDIRI</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="pengertian-belajar-mandiri col-sm animate__animated animate__fadeInDown">
+                Belajar mandiri adalah pendekatan belajar di mana individu berusaha untuk mengidentifikasi kebutuhan belajar mereka sendiri, menetapkan tujuan belajar, menemukan sumber daya yang diperlukan, dan mengevaluasi pengetahuan mereka
+                sendiri. Jika Anda menjelajahi dunia belajar mandiri seperti banyak siswa dan profesional lainnya yang terkurung di rumah karena pandemi, Berikut beberapa contoh di bawah ini:
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-lg-6" style="padding-top: 20px; font-size: 20px; padding-left: 60px">
-            Verifikasi sumber belajar Anda untuk kredibilitas. Sementara internet dibanjiri sumber daya, tidak semuanya akurat dalam pengetahuan dan dapat diandalkan. Karena itu, bersikaplah skeptis, periksa referensi, dan biasakan
-            membandingkan informasi yang Anda temukan di berbagai sumber.
-          </div>
-          <div class="col-sm-12 col-lg-6" style="text-align: center">
-            <img class="img" style="height: 650px; margin-top: -350px" src="img/vector-1.png" alt="" />
+          <div class="col-sm">
+            <img class="vector-8 animate__animated animate__fadeInDown" src="img/vector-8.png" alt="" />
           </div>
         </div>
       </section>
-      <svg style="margin-top: -230px" xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 1440 320">
-        <path
-          fill="#E9C46A"
-          fill-opacity="1"
-          d="M0,128L80,154.7C160,181,320,235,480,229.3C640,224,800,160,960,154.7C1120,149,1280,203,1360,229.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
-      <section class="container-fluid" style="background-color: #e9c46a">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 60 1440 320"><path fill="#E76F51" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,197.3C672,213,768,267,864,245.3C960,224,1056,128,1152,96C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <section class="container-fluid animate__animated animate__fadeInDown">
+          <div class="row">
+            <div class="col-sm">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="pilih-sumber col animate__animated animate__fadeInDown">Pilih Sumber Belajar Yang Kredibel</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="pengertian-pilih-sumber col-sm animate__animated animate__fadeInDown">
+                  Verifikasi sumber belajar Anda untuk kredibilitas. Sementara internet dibanjiri sumber daya, tidak semuanya akurat dalam pengetahuan dan dapat diandalkan. Karena itu, bersikaplah skeptis, periksa referensi, dan biasakan
+                  membandingkan informasi yang Anda temukan di berbagai sumber.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <img class="vector-1 animate__animated animate__fadeInDown" src="img/vector-1.png" alt="" />
+            </div>
+          </div>
+        </section>
+      <section class="container-fluid animate__animated animate__lightSpeedInLeft" style="background-color: #e9c46a;">
         <div class="row">
-          <div class="col" style="font-size: 70px; text-align: right; padding-right: 95px; margin-top: 50px">
-            Bagikan Pengetahuan Anda
-            <div class="title-long">
-            dan Berkolaborasi
+          <div class="col-sm">
+            <img class="vector-4 animate__animated animate__lightSpeedInLeft" src="img/vector-4.png" alt="" />
           </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-lg-6" style="text-align: center">
-            <img style="height: 500px; margin-top: -300px" src="img/vector-4.png" alt="" />
-          </div>
-          <div class="col-sm-12 col-lg-6" style="font-size: 20px; padding-top: 20px; margin-left: -18px">
-            Untuk berbagi pengetahuan dengan orang lain, kita harus melakukan upaya sadar untuk memahami informasi dengan lebih baik. Anda dapat terhubung dengan individu yang berpikiran sama dan berkolaborasi dengan mereka melalui
-            komunitas online, platform media sosial, forum diskusi, dll.
+          <div class="col-sm">
+            <div class="row">
+              <div class="col-sm">
+                <div class="bagikan-pengetahuan col animate__animated animate__lightSpeedInLeft"> Bagikan Pengetahuan Anda dan Berkolaborasi</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="pengertian-bagikan-pengetahuan col-sm animate__animated animate__lightSpeedInLeft">
+                Untuk berbagi pengetahuan dengan orang lain, kita harus melakukan upaya sadar untuk memahami informasi dengan lebih baik. Anda dapat terhubung dengan individu yang berpikiran sama dan berkolaborasi dengan mereka melalui
+                komunitas online, platform media sosial, forum diskusi, dll.
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 60 1440 320">
         <path fill="#E9C46A" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,112C640,107,800,117,960,122.7C1120,128,1280,128,1360,128L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
       </svg>
-      <section class="container-fluid">
+      <section class="container-fluid animate__animated animate__fadeInDown">
         <div class="row">
-          <div class="col" style="font-size: 70px; margin-left: 30px; margin-top: -90px">
-            Terapkan Apa yang telah
-            <div class="title-long">
-            Kita Pelajari
+          <div class="col-sm">
+            <div class="row">
+              <div class="col-sm">
+                <div class="terapkan-apa col animate__animated animate__fadeInDown">Terapkan Apa yang telah Kita Pelajari</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="pengertian-terapkan-apa col-sm animate__animated animate__fadeInDown">
+                Cara terbaik untuk mempertahankan apa yang telah Anda pelajari dan menguji pengetahuan Anda adalah dengan benar-benar menerapkannya di dunia nyata. Jika Anda mempelajari bahasa baru, Anda dapat berlatih berbicara dengan orang
+                lain yang mahir atau masih mempelajarinya seperti Anda. Jika Anda belajar desain grafis, Anda dapat menerapkan apa yang telah Anda pelajari untuk membuat infografis atau halaman web.
+              </div>
+            </div>
           </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-lg-6" style="font-size: 20px; padding-top: 0px; padding-left: 50px">
-            Cara terbaik untuk mempertahankan apa yang telah Anda pelajari dan menguji pengetahuan Anda adalah dengan benar-benar menerapkannya di dunia nyata. Jika Anda mempelajari bahasa baru, Anda dapat berlatih berbicara dengan orang
-            lain yang mahir atau masih mempelajarinya seperti Anda. Jika Anda belajar desain grafis, Anda dapat menerapkan apa yang telah Anda pelajari untuk membuat infografis atau halaman web.
-          </div>
-          <div class="col-sm-12 col-lg-6">
-            <img class="img" style="margin-top: -330px; margin-left: 70px" src="img/vector-2.png" alt="" />
+          <div class="col-sm">
+            <img class="vector-2 animate__animated animate__fadeInDown" src="img/vector-2.png" alt="" />
           </div>
         </div>
       </section>
-      <svg style="padding-top: -200px" xmlns="http://www.w3.org/2000/svg" viewBox="0 -60 1440 320">
-        <path fill="#E9C46A" fill-opacity="1" d="M0,64L288,32L576,128L864,96L1152,0L1440,128L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path>
-      </svg>
-      <section class="container-fluid" style="background-color: #e9c46a">
+      <section class="container-fluid" style="background-color: #E76F51">
         <div class="row">
-          <div class="col" style="text-align: center; font-size: 70px; margin-top: -105px">Teknik Belajar Mandiri</div>
+          <div class="teknik-belajar col animate__animated animate__backInDown">Teknik Belajar Mandiri</div>
         </div>
         <div class="row">
           <center>
-            <div class="col-sm-9 col-lg-3" style="font-size: 20px; padding-top: 20px">
+            <div class="pengertian-teknik-belajar col-sm-9 col-lg-3 animate__animated animate__backInDown">
               Belajar mandiri terkadang bisa sangat sulit dan sepi. Berikut adalah beberapa teknik yang efektif untuk membantu Anda menjaga hal-hal tetap menarik, mudah, dan produktif.
             </div>
           </center>
         </div>
       </section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 60 1440 320"><path fill="#E9C46A" fill-opacity="1" d="M0,128L288,256L576,192L864,160L1152,192L1440,128L1440,0L1152,0L864,0L576,0L288,0L0,0Z"></path></svg>
-      <section class="container-fluid">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E76F51" fill-opacity="0.95" d="M0,128L48,117.3C96,107,192,85,288,85.3C384,85,480,107,576,128C672,149,768,171,864,170.7C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+      <section class="container-fluid animate__animated animate__backInLeft">
         <div class="row">
-          <div class="col" style="text-align: right; margin-right: 620px; font-size: 70px; margin-top: -20px">Membaca</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-lg-6">
-            <img class="img" style="height: 500px; padding-left: 80px; margin-top: -200px" src="img/vector-5.png" alt="" />
+          <div class="col-sm">
+            <img class="vector-5" src="img/vector-5.png" alt="" />
           </div>
-          <div class="col-sm-12 col-lg-6" style="padding-top: 30px; font-size: 20px">
-            Siapa pun dapat membaca buku, tetapi dalam hal belajar mandiri, Anda mengambil langkah lebih jauh dan benar-benar menginternalisasi apa yang Anda baca. Anda dapat mencatat dan membuat koneksi saat Anda membaca dan belajar.
-            Internet dipenuhi dengan artikel blog dan buku yang dapat Anda pilih berdasarkan kebutuhan belajar Anda. Atau Anda sebenarnya bisa membeli buku atau meminjamnya dari perpustakaan, yang juga bisa Anda lakukan secara online.
-          </div>
-        </div>
-      </section>
-      <svg style="margin-top: -300px" xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 1440 320">
-        <path
-          fill="#E9C46A"
-          fill-opacity="1"
-          d="M0,224L40,224C80,224,160,224,240,234.7C320,245,400,267,480,266.7C560,267,640,245,720,218.7C800,192,880,160,960,149.3C1040,139,1120,149,1200,160C1280,171,1360,181,1400,186.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 40 1440 320">
-        <path
-          fill="#E9C46A"
-          fill-opacity="1"
-          d="M0,128L40,112C80,96,160,64,240,90.7C320,117,400,203,480,197.3C560,192,640,96,720,69.3C800,43,880,85,960,85.3C1040,85,1120,43,1200,48C1280,53,1360,107,1400,133.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
-        ></path>
-      </svg>
-      <section class="container-fluid">
-        <div class="row">
-          <div class="col" style="font-size: 70px; margin-left: 30px; margin-top: -90px">Video Pendidikan</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-lg-6" style="padding-top: 20px; font-size: 20px; padding-left: 50px">
-            Video menyediakan cara yang mudah dan menarik untuk dipelajari. Mereka saat ini digunakan di seluruh sekolah dan universitas sebagai alat pendidikan untuk meningkatkan pengalaman belajar siswa – sekarang lebih dari sebelumnya
-            karena kebanyakan siswa belajar dari jarak jauh. Ada berbagai jenis video yang dapat Anda gunakan untuk mendidik diri sendiri, mulai dari film hingga klip video 50-60 detik. Temukan mereka di Pembelajaran YouTube, TEDed, BBC
-            Bitesize, Google Video, dan Pendidikan Geografis Nasional
-          </div>
-          <div class="col-sm-12 col-lg-6">
-            <img style="margin-top: -105px; padding-left: 80px" class="img" src="img/vector-3.png" alt="" />
+          <div class="col-sm">
+            <div class="row">
+              <div class="col-sm">
+                <div class="membaca col">Membaca</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="pengertian-membaca col-sm">
+                Siapa pun dapat membaca buku, tetapi dalam hal belajar mandiri, Anda mengambil langkah lebih jauh dan benar-benar menginternalisasi apa yang Anda baca. Anda dapat mencatat dan membuat koneksi saat Anda membaca dan belajar.
+                Internet dipenuhi dengan artikel blog dan buku yang dapat Anda pilih berdasarkan kebutuhan belajar Anda. Atau Anda sebenarnya bisa membeli buku atau meminjamnya dari perpustakaan, yang juga bisa Anda lakukan secara online.
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <svg style="margin-top: -130px" xmlns="http://www.w3.org/2000/svg" viewBox="0 -60 1440 320">
-        <path
-          fill="#E9C46A"
-          fill-opacity="1"
-          d="M0,128L48,149.3C96,171,192,213,288,224C384,235,480,213,576,197.3C672,181,768,171,864,170.7C960,171,1056,181,1152,176C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 40 1440 320">
-        <path
-          fill="#E9C46A"
-          fill-opacity="1"
-          d="M0,128L48,122.7C96,117,192,107,288,106.7C384,107,480,117,576,122.7C672,128,768,128,864,160C960,192,1056,256,1152,256C1248,256,1344,192,1392,160L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
-      <section class="container-fluid">
+      <section class="container-fluid animate__animated animate__backInRight">
         <div class="row">
-          <div class="col" style="text-align: right; margin-right: 30px; font-size: 70px">
-            Pembelajaran Menggunakan
-            <div class="title-long">
-            Aplikasi dan Software
+          <div class="col-sm">
+            <div class="row">
+              <div class="col-sm">
+                <div class="video-pendidikan col">Video Pendidikan</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="pengertian-video-pendidikan col-sm">
+                Video menyediakan cara yang mudah dan menarik untuk dipelajari. Mereka saat ini digunakan di seluruh sekolah dan universitas sebagai alat pendidikan untuk meningkatkan pengalaman belajar siswa – sekarang lebih dari sebelumnya
+                karena kebanyakan siswa belajar dari jarak jauh. Ada berbagai jenis video yang dapat Anda gunakan untuk mendidik diri sendiri, mulai dari film hingga klip video 50-60 detik. Temukan mereka di Pembelajaran YouTube, TEDed, BBC
+                Bitesize, Google Video, dan Pendidikan Geografis Nasional
+              </div>
+            </div>
           </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-lg-6">
-            <img style="padding-bottom: 30px; padding-left: 90px; margin-top: -200px" class="img" src="img/vector-7.png" alt="" />
-          </div>
-          <div class="col-sm-12 col-lg-6" style="padding-top: 50px; font-size: 20px; padding-right: 20px">
-            Aplikasi menyediakan cara yang menghibur sekaligus efektif untuk mengembangkan pengetahuan Anda. Hal terbaik tentang menggunakan aplikasi adalah Anda dapat menggunakannya di perangkat seluler Anda dan melanjutkan proses belajar
-            Anda di mana pun Anda berada. Berikut adalah beberapa pembelajaran web dan aplikasi seluler untuk membantu Anda memulai: Duolingo, Pembicaraan TED, kamus.com, dan Amazon Kindle
+          <div class="col-sm">
+            <img class="vector-3" src="img/vector-3.png" alt="" />
           </div>
         </div>
       </section>
-      <div class="footer container-fluid">
+      <section class="container-fluid animate__animated animate__backInLeft">
+        <div class="row">
+          <div class="col-sm">
+            <img class="vector-7" src="img/vector-7.png" alt="" />
+          </div>
+          <div class="col-sm">
+            <div class="row">
+              <div class="col-sm">
+                <div class="pembelajaran-menggunakan col">Pembelajaran Menggunakan Aplikasi dan Software</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="pengertian-pembelajaran-menggunakan col-sm">
+                Aplikasi menyediakan cara yang menghibur sekaligus efektif untuk mengembangkan pengetahuan Anda. Hal terbaik tentang menggunakan aplikasi adalah Anda dapat menggunakannya di perangkat seluler Anda dan melanjutkan proses belajar
+                Anda di mana pun Anda berada. Berikut adalah beberapa pembelajaran web dan aplikasi seluler untuk membantu Anda memulai: Duolingo, Pembicaraan TED, kamus.com, dan Amazon Kindle
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <svg class="animate__animated animate__fadeIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 1440 320"><path fill="#264653" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,106.7C384,96,480,96,576,117.3C672,139,768,181,864,181.3C960,181,1056,139,1152,128C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <div class="footer container-fluid animate__animated animate__fadeIn">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
-          <p class="col-md-4 mb-0" style="color: white">&copy; Copyright 2022. All Rights Reserved</p>
-
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
-          </a>
-
-          <ul class="nav col-md-4 justify-content-end">
+          <p class="col-md-6 mb-0" style="color: white">&copy; Copyright 2022. All Rights Reserved</p>
+          <ul class="nav col-md-6 justify-content-end">
             <li class="nav-item"><a href="index.html" style="color: white" class="nav-link px-2">Home</a></li>
             <li class="nav-item"><a href="self-learning.html" style="color: white" class="nav-link px-2">Solusi Belajar Mandiri</a></li>
             <li class="nav-item"><a href="technologies.html" style="color: white" class="nav-link px-2">Solusi Teknologi</a></li>

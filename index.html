@@ -7,21 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minat Belajar Di Masa Pandemi</title>
   <link rel="shortcut icon" href="image/fav.png" type="image/x-icon">
+  <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="vendor/bootstrap-5.2.0-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="vendor/fonts/icomoon/style.css">
   <link rel="stylesheet" href="valen.css">
   <link rel="stylesheet" href="valen2.css">
   <style>
-    .pcol {
-      padding-left: 875px;
+    .navbar-collapse {
+      flex-grow: 0;
     }
 
-    .sec-1 {
-      margin-top: 110px;
+    .pcol {
+      margin-right: 35px;
     }
 
     .card-s {
       width: 35rem;
+      margin-left: 50px;
+    }
+
+    .sec-1 {
+      margin-top: 80px;
     }
 
     .card img {
@@ -29,12 +35,9 @@
       height: 400px;
     }
 
-    .card-title {
-      font-size: 20px;
-    }
-
     .image {
       margin-left: 80px;
+      /* height: 500px; */
     }
 
     .minat {
@@ -46,21 +49,29 @@
       margin-left: 12px;
     }
 
+    .imagee-hei {
+      height: 500px;
+    }
+
     .as-con {
       padding-top: 100px;
       padding-bottom: 50px;
       margin-top: 80px;
+      margin-bottom: 80px;
     }
 
     .sub-title {
       font-size: 15px;
-      margin-top: 10px;
+      margin-top: 30px;
     }
 
     .titlee {
       font-size: 50px;
-      margin-top: 45px;
+      margin-top: 35px;
+    }
 
+    .img-hei {
+      height: 500px;
     }
 
     .baik {
@@ -77,6 +88,7 @@
       transform: translateY(150px);
       opacity: 0;
       transition: all 2s ease;
+      padding-bottom: 80px;
     }
 
     #mslh.active {
@@ -108,32 +120,343 @@
       opacity: 1;
     }
 
+    footer {
+      cursor: url('cursor/cursor\ \(3\).cur'), auto;
+    }
+
+    .section-card {
+      font-size: 40px;
+    }
+
+    .pandangan {
+      font-size: 30px;
+    }
+
     @media only screen and (max-width: 1024px) {
-      .pcol {
-        padding-left: 670px;
+
+      .title {
+        font-size: 20px;
+        margin-left: 50px;
+      }
+
+      .minat {
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      .tema {
+        margin-left: 50px;
+        font-size: 20px;
       }
 
       .card-s {
         width: 25rem;
       }
 
-      .image {
-        width: 600px;
-        height: 500px;
-        margin-left: 180px;
-      }
-
-      .minat {
-        font-size: 50px;
-        line-height: 70px;
-        margin: 180px;
-
+      .img-hei {
+        height: 400px;
+        margin-top: 20px;
       }
 
       .para {
         font-size: 15px;
-        margin-left: 100px;
+        margin-left: 50px;
       }
+
+      .card img {
+        width: 400px;
+        height: 400px;
+      }
+
+      .card {
+        width: 27rem;
+      }
+
+      .mar-card {
+        margin-left: 10px;
+      }
+
+      .imagee-hei {
+        height: 410px;
+      }
+
+      .sub-title {
+        font-size: 10px;
+        margin-top: 45px;
+      }
+
+      .titlee {
+        font-size: 40px;
+        margin-top: 10px;
+      }
+
+      .baik {
+        font-size: 12px;
+      }
+
+      .as-con {
+        padding-top: 40px;
+      }
+
+      .sec-1 {
+      margin-top: 50px;
+    }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+      .img-hei{
+        height: 320px;
+      }
+
+      .card {
+        width: 20rem;
+      }
+
+      .card img {
+        width: 300px;
+        height: 400px;
+      }
+
+      .title {
+        font-size: 20px;
+        margin-left: 50px;
+      }
+
+      .minat {
+        font-size: 30px;
+        line-height: 50px;
+      }
+
+      .tema {
+        margin-left: 50px;
+        font-size: 20px;
+      }
+      
+      .para {
+        font-size: 10px;
+        margin-left: 50px;
+      }
+
+      .image {
+        margin-left: 20px;
+      }
+
+      .pcol {
+        margin-left: 600px;
+      }
+
+      .dropdown-menu {
+        width: 13rem;
+        margin-left: 540px;
+      }
+
+      .mar-card2 {
+        margin-left: 25px;
+      }
+
+      .imagee-hei {
+        height: 320px;
+      }
+
+      .sub-title {
+        font-size: 10px;
+      }
+
+      .titlee {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+
+      .baik {
+        font-size: 10px;
+      }
+
+      p {
+        margin-bottom: 3rem;
+      }
+
+      .imagee {
+        margin-left: 0px;
+        margin-right: 10px;
+      }
+
+      .as-con {
+        padding-bottom: 20px;
+      }
+
+      .footer-59391 .site-logo a {
+        font-size: 25px;
+
+      }
+
+      .footer-59391 .nav-links li a {
+        font-size: 12px;
+      }
+
+      .footer-59391 {
+        padding: 1rem 0;
+
+      }
+    }
+
+    @media only screen and (max-width: 425px) {
+      .pcol {
+        margin-left: 260px;
+      }
+
+      .dropdown-menu {
+        width: 13rem;
+        margin-left: 195px;
+      }
+
+      .img-hei{
+        height: 180px;
+      }
+
+      .card {
+        width: 10rem;
+      }
+
+      .card img {
+        width: 150px;
+        height: 200px;
+      }
+
+      .title {
+        margin-left: 30px;
+      }
+
+      .minat {
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      .tema {
+        margin-left: 30px;
+        font-size: 10px;
+      }
+      
+      .para {
+        font-size: 7px;
+        margin-left: 30px;
+      }
+
+      .sec-1 {
+        margin-top: 30px;
+      }
+
+      .image {
+        margin-left: 0px;
+      }
+
+      .card-text {
+        font-size: 12px;
+      }
+
+      .br-col {
+        width: 100%;
+      }
+
+      .section-card {
+        font-size: 20px;
+      }
+
+      .pandangan {
+        font-size: 15px;
+      }
+
+      .spc {
+        margin-top: 0rem!important;
+      }
+
+      .sc {
+        font-size: 14px;
+      }
+
+      .as-con {
+        margin: 30px;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+      }
+      
+
+      .container.as-con {
+        width: 87%;
+      }
+
+      .imagee-hei {
+        height: 280px ;
+        margin-left: 25px;
+      }
+
+      .sub-t {
+        font-size: 10px;
+        margin-left: 112px;
+      }
+
+      .sub-title {
+        margin-top: 10px;
+      }
+
+
+      .titlee {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left: 75px;
+      }
+
+      .baik {
+        font-size: 10px;
+      }
+
+      .footer-59391 .nav-links li a {
+        font-size: 12px;
+        margin-left: 30px;
+      }
+
+      .footer-59391 .site-logo {
+        margin-left: 35px;
+      }
+
+      .footer-59391 .text-md-right {
+        margin-left: 115px;
+      }
+
+    }
+
+    @media only screen and (max-width: 375px) {
+      .pcol {
+        margin-left: 230px;
+      }
+
+      .dropdown-menu {
+        width: 12rem;
+        margin-left: 170px;
+      }
+
+      .img-hei{
+        height: 120px;
+      }
+
+      .mar-card2 {
+        margin-left: 4px;
+      }
+
+      .mar-card {
+        margin-left: 0px;
+      }
+
+      .card-text {
+        font-size: 10px;
+      }
+
+      .imagee-hei {
+        height: 250px ;
+        margin-left: 25px;
+      }
+
     }
   </style>
 </head>
@@ -141,19 +464,20 @@
 <body>
   <nav class="navbar navbar-expand-lg" style="background-color:#f4a261 ;">
     <div class="container-fluid">
-      <a class="img" href="."><img src="image/fav.png" width="70px"></a>
-      &nbsp;
-      &nbsp;
-      <a class="navbar-brand" href="." style="color: white;"><b>KOPASUS IT | RPL</b> </a>
+      <div>
+        <a class="img" href="."><img src="image/fav.png" width="70px"></a>
+        <a class="navbar-brand animate__animated animate__fadeInDown animate__delay-0,5s" href="."
+          style="color: white;"><b>KOPASUS IT | RPL</b> </a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse pcol" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color:white" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle pcol" style="color:white" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               <b>Solusi Masalah</b>
             </a>
             <ul class="dropdown-menu sz" style="background-color: white;">
@@ -170,54 +494,47 @@
       </div>
     </div>
   </nav>
-
   <section class="container" id="home">
     <div class="row">
       <div class="col-6 sec-1">
-        <div class="tema" style="color: white;"><b>Education Care</b></div>
+        <div class="tema animate__animated animate__zoomIn animate__delay-1s" style="color: white;"><b>Education
+            Care</b></div>
         &nbsp;
-        <div class="title" style="color: white;">
+        <div class="title animate__animated animate__pulse" style="color: white;">
           <b class="minat"> Minat Belajar Di Masa Pandemi</b>
         </div>
         <br>
-        <p class="para" style="color: white;"><b>Covid 19 sangat mempengaruhi minat belajar. Hal itu dikarenakan
+        <p class="para animate__animated animate__fadeIn animate__delay-2s" style="color: white;">
+          <b>Covid 19 sangat mempengaruhi minat belajar. Hal itu dikarenakan
             perubahan yang secara tiba tiba
             terjadi dimana kita dipaksa untuk melakukan segala sesuatu secara daring/online. Menumbuhkan Minat Belajar
             Mandiri Dan Sustainbility Serta
             Pemahaman Materi
-          </b></p>
+          </b>
+        </p>
       </div>
       <div class="col-6">
         <div class="image">
-          <img src="image/section1.png" alt="" height="500px">
+          <img class="img-hei" src="image/section1.png" alt="">
         </div>
       </div>
     </div>
   </section>
-
-  <br>
-  <br>
-  <br>
-
-  <section id="mslh" style="background-color: #E9C46A;">
-    <div class="container">
-      <div class="row col-12">
-        &nbsp;<div class="section-card" style="font-size: 30px;color: white;">
-          <center><b>Keresahan Dan Masalah Yang Dihadapi Para Pelajar Di Seluruh Indonesia</b></center>
-        </div>
-        &nbsp;
-        <center>
-          <p style="color: white;font-size:20px;">Pandangan Diambil Dari Siswa/Siswi Pelajar Di Indonesia</p>
-        </center>
-      </div>
+  <section class="container-fluid" id="mslh" style="background-color: #E9C46A;">
+    &nbsp;
+    <div class="section-card" style="color: white;">
+      <center><b>Keresahan Dan Masalah Yang Dihadapi Para Pelajar Di Seluruh Indonesia</b></center>
     </div>
-
-    <div class="row col-12">
-      <div class="col-6 mt-5" id="cardrev">
-        <div class="card card-s" style="margin-left: 50px;">
+    &nbsp;
+    <center>
+      <p class="pandangan" style="color: white;">Pandangan Diambil Dari Siswa/Siswi Pelajar Di Indonesia</p>
+    </center>
+    <div class="row">
+      <div class="col-6 mt-5 spc" id="cardrev">
+        <div class="card card-s mar-card2">
           <img src="image/card1.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <div class="card-title"><b>
+            <div class="card-title sc"><b>
                 <center>Ekonomi Keluarga</center>
               </b></div>
             &nbsp;
@@ -227,8 +544,8 @@
           </div>
         </div>
       </div>
-      <div class="col-6 mt-5" id="cardrev">
-        <div class="card card-s" style="margin-left: 50px;">
+      <div class="col-6 mt-5 spc" id="cardrev">
+        <div class="card card-s mar-card">
           <img src="image/card2.png" class="card-img-top" alt="...">
           <div class="card-body">
             <div class="card-title"><b>
@@ -241,8 +558,10 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
       <div class="col-6 mt-5" id="cardrev">
-        <div class="card" style="width: 35rem; margin-left: 50px;">
+        <div class="card card-s mar-card2">
           <img src="image/card3.png" class="card-img-top" alt="...">
           <div class="card-body">
             <div class="card-title"><b>
@@ -256,7 +575,7 @@
         </div>
       </div>
       <div class="col-6 mt-5" id="cardrev">
-        <div class="card" style="width: 35rem; margin-left: 50px;">
+        <div class="card card-s mar-card">
           <img src="image/card4.png" class="card-img-top" alt="...">
           <div class="card-body">
             <div class="card-title"><b>
@@ -271,8 +590,10 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
       <div class="col-6 mt-5" id="cardrev">
-        <div class="card" style="width: 35rem; margin-left: 50px;">
+        <div class="card card-s mar-card2">
           <img src="image/card5.png" class="card-img-top" alt="...">
           <div class="card-body">
             <div class="card-title"><b>
@@ -288,7 +609,7 @@
         </div>
       </div>
       <div class="col-6 mt-5" id="cardrev">
-        <div class="card" style="width: 35rem; margin-left: 50px;">
+        <div class="card card-s mar-card">
           <img src="image/card6.png" class="card-img-top" alt="...">
           <div class="card-body">
             <div class="card-title"><b>
@@ -302,9 +623,7 @@
         </div>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
+    </div>
   </section>
 
   <section id="sdm" style="background-color: #E76F51;">
@@ -313,18 +632,17 @@
       <div class="row">
         <div class="col-6">
           <div class="imagee">
-            <img src="image/section3.png" alt="" height="500px">
+            <img class="imagee-hei" src="image/section3.png" alt="">
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 br-col">
           <div class="sub-title">
-            <b>SDM Sumber Daya Manusia</b>
+            <b class="sub-t">SDM Sumber Daya Manusia</b>
             <div class="titlee" style="color: white;">
               <b>Indonesia Yang <br> Lebih Baik Lagi</b>
             </div>
             <br>
           </div>
-          <br>
           <p class="baik" style="color: white;">
             Baik didalam dan diluar negeri Sumber Daya Manusia (SDM) merupakan suatu kesatuan yang penting di indonesia
             yang masyarakatnya yang sangat banyak ini tentu daring atau belajar online ini sangat membebani, terutama
@@ -336,18 +654,14 @@
         </div>
       </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
+    &nbsp;
   </section>
-
   <footer class="footer-59391 ft-e" style="background-color: #264653;">
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-6">
           <div class="site-logo">
-            <a href="#" style="color: white;"><img src="image/fav.png" width="70px" alt=""> Kopasus IT | RPL</a>
+            <a href="." style="color: white;"><img src="image/fav.png" width="70px" alt=""> Kopasus IT | RPL</a>
           </div>
           &nbsp;
         </div>

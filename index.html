@@ -17,6 +17,58 @@
       flex-grow: 0;
     }
 
+    mark {
+      --color1: springgreen;
+      --color2: springgreen;
+      --bg-height: 20%;
+        
+      all: unset;
+      background-image: linear-gradient(var(--color1), var(--color2));
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-size: 0 var(--bg-height);
+      animation: highlight 2s 1 ease-out;
+      animation-fill-mode: forwards;
+      animation-play-state: paused;
+    }
+
+
+    @keyframes highlight {
+      to {
+        background-size: 100% var(--bg-height);
+      }
+    }
+
+
+    .scroller {
+      height: 1.2em;
+      line-height: 1.2em;
+      position: relative;
+      overflow: hidden;
+      width: 10em;
+    }
+    .scroller > span {
+      position: absolute;
+      top: 0;
+      animation: slide 5s infinite;
+      font-weight: bold;
+      
+    }
+    @keyframes slide {
+      0% {
+        top: 0;
+      }
+      25% {
+        top: -1.2em;
+      }
+      50% {
+        top: -2.4em;
+      }
+      75% {
+        top: -3.6em;
+      }
+    }
+
     .pcol {
       margin-right: 35px;
     }
@@ -120,10 +172,6 @@
       opacity: 1;
     }
 
-    footer {
-      cursor: url('cursor/cursor\ \(3\).cur'), auto;
-    }
-
     .footer-59391 {
       padding: 2rem 0;
     }
@@ -218,7 +266,7 @@
 
       .card img {
         width: 400px;
-        height: 400px;
+        height: 350px;
       }
 
       .card {
@@ -287,7 +335,7 @@
 
       .card img {
         width: 300px;
-        height: 400px;
+        height: 250px;
       }
 
       .title {
@@ -472,8 +520,8 @@
       .pandangan {
         font-size: 15px;
       }
-
-      .spc {
+      
+      .spcc {
         margin-top: 0rem!important;
       }
 
@@ -585,7 +633,7 @@
 
       .imagee-hei {
         height: 250px ;
-        margin-left: 25px;
+        margin-left: 15px;
       }
 
       .title {
@@ -607,7 +655,6 @@
         font-size: 11px;
         margin-left: 13px;
       }
-
 
       .sub-t {
         font-size: 10px;
@@ -655,7 +702,16 @@
         margin-top: 40px;
       }
 
+      .card img {
+        width: 100%;
+        height: 200px;
+      }
+
+      .scroller {
+      width: 9em;
     }
+
+  }
   </style>
 </head>
 
@@ -674,7 +730,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle pcol" style="color:white" href="#" role="button"
+            <a class="nav-link dropdown-toggle pcol animate__animated animate__bounce animate__repeat-3" style="color:white" href="#" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               <b>Solusi Masalah</b>
             </a>
@@ -723,14 +779,18 @@
   <section class="container-fluid" id="mslh" style="background-color: #E9C46A;">
     &nbsp;
     <div class="section-card" style="color: white;">
-      <center><b>Keresahan Dan Masalah Yang Dihadapi Para Pelajar Di Seluruh Indonesia</b></center>
+      <center>
+        <b>
+           <mark>Keresahan</mark> Dan Masalah Yang Dihadapi Para Pelajar Di Seluruh Indonesia
+        </b>
+      </center>
     </div>
     &nbsp;
     <center>
-      <p class="pandangan" style="color: white;">Pandangan Diambil Dari Siswa/Siswi Pelajar Di Indonesia</p>
+      <p class="pandangan" style="color: white;">Pandangan Diambil Dari <mark>Siswa/Siswi Pelajar</mark> Di Indonesia</p>
     </center>
     <div class="row">
-      <div class="col-sm-6 mt-5 spc" id="cardrev">
+      <div class="col-sm-6 mt-5 spc spcc" id="cardrev">
         <div class="card card-s mar-card2">
           <!-- https://www.freepik.com/free-vector/depressed-sad-man-thinking-financial-problems_8270994.htm#query=no%20money&from_query=no%20have%20money&position=4&from_view=search -->
           <img src="image/card1.png" class="card-img-top" alt="...">
@@ -739,8 +799,8 @@
                 <center>Ekonomi Keluarga</center>
               </b></div>
             <p class="card-text">Dalam pembelajaran online ini banyak kendala yang dihadapi para siswa terutama dalam
-              kuota internet karena kuota yang lumayan mahal dan terus menerus dibeli ataupun menggunakan wifi yang
-              harus dibayar tiap bulan. Yang lumayan membebani ekonomi keluarga</p>
+              kuota internet karena <mark>kuota yang lumayan mahal dan terus menerus dibeli ataupun menggunakan wifi yang
+              harus dibayar tiap bulan.</mark> Yang lumayan membebani ekonomi keluarga</p>
           </div>
         </div>
       </div>
@@ -753,7 +813,7 @@
                 <center>Jaringan</center>
               </b></div>
             <p class="card-text">Untuk pembelajaran pasti membutuhkan aplikasi seperti Zoom dan Gmeet. Untuk hal itu
-              pasti membutuhkan jaringan yang stabil atapun mempunyai akses wifi pribadi jadi cukup berat bagi yang
+              pasti membutuhkan <mark> jaringan yang stabil atapun mempunyai akses wifi pribadi</mark> jadi cukup berat bagi yang
               menggunakan kuota internet.</p>
           </div>
         </div>
@@ -769,7 +829,7 @@
                 <center>Faktor Internal</center>
               </b></div>
             <p class="card-text">Pada faktor internal juga terdapat pengaruh yang sangat besar dalam pembelajaran secara
-              daring apabila ada orangtua yang kena Pemutusan Hubungan Kerja (PHK). Hal itu menambahkan aura negatif
+              daring apabila ada orangtua yang kena <mark> Pemutusan Hubungan Kerja (PHK). Hal itu menambahkan aura negatif</mark>
               bagi keberlangsungan belajar online di rumah masing-masing siswa sekolah.</p>
           </div>
         </div>
@@ -782,11 +842,10 @@
             <div class="card-title"><b>
                 <center>Penyampaian Materi</center>
               </b></div>
-            <p class="card-text">Dalam pembelajaran secara daring/online penyampaian materi menjadi tidak maksimal,
-              dikarenakan tidak
-              terjadi pertemuan antara guru dan murid serta interaksi yang dilakukan antara guru dan murid. Sehingga
-              murid sulit memahami materi yang
-              disampaikan. </p>
+            <p class="card-text">Dalam pembelajaran secara daring/online <mark>penyampaian materi menjadi tidak maksimal,</mark> 
+              dikarenakan tidak terjadi pertemuan antara guru dan murid serta interaksi yang dilakukan antara guru dan murid.<mark>Sehingga
+              murid sulit memahami materi yang disampaikan.</mark> 
+            </p>
           </div>
         </div>
       </div>
@@ -801,10 +860,10 @@
                 <center>Pemberian Tugas</center>
               </b></div>
             <p class="card-text">Belajar
-              online juga lebih banyak tugas yang diberikan daripada materi dan pemahaman yang diberikan. Sehingga murid
-              yang mengerjakan tugas hanya mengerjakan tugas tanpa memahami materi yang diberikan. Hanya melihat jawaban
-              nya saja
-              yang dicari di Google dan aplikasi lainnya</p>
+              online juga <mark> lebih banyak tugas yang diberikan</mark> daripada materi dan pemahaman yang diberikan. Sehingga murid
+              yang mengerjakan tugas <mark>hanya mengerjakan tugas tanpa memahami materi yang diberikan.</mark> Hanya melihat jawaban
+              nya saja yang dicari di Google dan aplikasi lainnya
+            </p>
           </div>
         </div>
       </div>
@@ -816,8 +875,8 @@
             <div class="card-title"><b>
                 <center>Kurangnya Minat Belajar</center>
               </b></div>
-            <p class="card-text">Masalah terakhir yang sering dihadapi adalah kurangnya minat dan
-              kesadaran akan belajar mandiri dan sustainbility dalam pemahaman materi,atau membentuk kelompok
+            <p class="card-text">Masalah terakhir yang sering dihadapi adalah <mark> kurangnya minat dan
+              kesadaran akan belajar mandiri dan sustainbility dalam pemahaman materi</mark>,atau membentuk kelompok
               dengan tujuan menciptakan pembelajaran yang menyenangkan dan tidak membosankan.</p>
           </div>
         </div>
@@ -839,7 +898,15 @@
           <div class="sub-title">
             <b class="sub-t">SDM Sumber Daya Manusia</b>
             <div class="titlee" style="color: white;">
-              <b>Indonesia Yang <br> Lebih Baik Lagi</b>
+              <b>Indonesia Yang</b>
+              <div class="scroller">
+                <span>
+                  Unggul<br/>
+                  Lebih Baik Lagi<br/>
+                  Berpendidikan<br/>
+                  Semakin Maju
+                </span>
+              </div>
             </div>
             <br>
           </div>
@@ -1078,6 +1145,28 @@
             bang.replay();
         }
   </script>
+
+  <script>
+    (function (document) {
+  const markers = [...document.querySelectorAll('mark')];
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio > 0) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.8
+  });
+  
+  markers.forEach(mark => {
+    observer.observe(mark);
+  });
+})(document);
+  </script>
+
 </body>
 
 </html>

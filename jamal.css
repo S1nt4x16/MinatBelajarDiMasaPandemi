@@ -1,10 +1,22 @@
+html{
+  cursor:url('cursor/cursor\ \(3\).cur'), auto;
+}
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .body {
-  cursor: url("cursor/cursor\ \(1\).cur"), auto;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #F4A261;
 }
+
 .header {
   background-color: #e76f51;
+}
+.title-belajar-mandiri{
+  opacity: 60%;
 }
 .kopasus {
   margin-left: 50px;
@@ -34,3 +46,8 @@
 .footer {
   background-color: #264653;
 }
+
+svg {
+  width: 100%;
+}
+

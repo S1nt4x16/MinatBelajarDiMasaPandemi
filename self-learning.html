@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="jamal.css" />
     <link rel="stylesheet" href="vendor/animate.css/animate.min.css"/>
     <style>
+      .tengah{
+        text-align: center;
+      }
+      .udayana{
+        height: 70px;
+        padding-bottom: 10px;
+      }
+      .cpright {
+        align-self: center;
+      }
+      .list {
+        text-align: right;
+        margin-top: 40px;
+        padding-right: 10px;
+      }
+      .flink {
+        text-decoration: none;
+        padding-left: 25px;
+      }
       .pengertian-belajar-mandiri{
         margin-left: 40px;
         font-size: 20px;
@@ -430,6 +449,10 @@
       }
 
       @media only screen and (max-width:425px) {
+        .cpright {
+        align-self: center;
+        padding-bottom: 20px;
+        }
         .pengertian-belajar-mandiri{
           margin-left: 5px;
           text-align: center;
@@ -468,6 +491,7 @@
           line-height: 40px;
           text-align: center;
           margin-left: -10px;
+          padding-top: 10px;
         }
         .pengertian-bagikan-pengetahuan{
           font-size: 12px;
@@ -516,11 +540,12 @@
         }
         .teknik-belajar{
           text-align: center;
-          padding-bottom: 20px;
+          padding-bottom: 0px;
           font-size: 30px; 
           font-family: Arial, Helvetica, sans-serif; 
           line-height: 40px;
-          padding-top: 70px;
+          padding-top: 0px;
+          margin-top: -20px;
         }
         .pengertian-teknik-belajar{
           font-size: 12px; 
@@ -593,6 +618,9 @@
             flex: 0 0 auto;
             width: 100%;
         }
+        .cpright {
+        align-self: center;
+        }
       }
 
       @media only screen and (max-width:375px) {
@@ -634,6 +662,7 @@
           line-height: 40px;
           text-align: center;
           margin-left: -10px;
+          padding-top: 15px;
         }
         .pengertian-bagikan-pengetahuan{
           font-size: 12px;
@@ -682,11 +711,11 @@
         }
         .teknik-belajar{
           text-align: center;
-          padding-bottom: 20px;
+          padding-bottom: 0px;
           font-size: 30px; 
           font-family: Arial, Helvetica, sans-serif; 
           line-height: 40px;
-          padding-top: 70px;
+          padding-top: 0px;
         }
         .pengertian-teknik-belajar{
           font-size: 12px; 
@@ -787,7 +816,7 @@
       </div>
     </nav>
     <div class="body">
-      <section style="background-color: #E76F51" class="container-fluid">
+      <section style="background-color: #E76F51; opacity: 90%;" class="container-fluid">
         <div class="row">
           <div class="col-sm">
             <div class="row">
@@ -803,11 +832,66 @@
             </div>
           </div>
           <div class="col-sm">
+            <!-- https://img.freepik.com/free-vector/coding-workshop-concept-illustration_114360-8112.jpg?w=1380&t=st=1661942594~exp=1661943194~hmac=f40868ca981d531036995916f722de933cee70dddb9cdd03b3bea36cf36a727d -->
             <img class="vector-8 animate__animated animate__fadeInDown" src="img/vector-8.png" alt="" />
           </div>
         </div>
       </section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 60 1440 320"><path fill="#E76F51" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,197.3C672,213,768,267,864,245.3C960,224,1056,128,1152,96C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+      <!-- https://codepen.io/pushkar8723/pen/eYJQVvE -->
+      <svg viewbox="0 45 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style type="text/css">
+            .wave {
+              animation: wave 8s linear infinite;
+            }
+      
+            .wave1 {
+              animation: wave1 10s linear infinite;
+            }
+      
+            .wave2 {
+              animation: wave2 12s linear infinite;
+            }
+      
+            @keyframes wave {
+              0% {
+                transform: translateX(0%);
+              }
+      
+              100% {
+                transform: translateX(100%);
+              }
+            }
+      
+            @keyframes wave1 {
+              0% {
+                transform: scaleY(1.2) translateX(0%);
+              }
+      
+              100% {
+                transform: scaleY(1.2) translateX(100%);
+              }
+            }
+      
+            @keyframes wave2 {
+              0% {
+                transform: scaleY(.8) translateX(0%);
+              }
+      
+              100% {
+                transform: scaleY(.8) translateX(100%);
+              }
+            }
+          </style>
+          <path id='sineWave' fill="#e76f51" fill-opacity="60%" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+        </defs>
+        <use class="wave" href="#sineWave" />
+        <use class="wave" x="-100%" href="#sineWave" />
+        <use class="wave1" href="#sineWave" />
+        <use class="wave1" x="-100%" href="#sineWave" />
+        <use class="wave2" href="#sineWave" />
+        <use class="wave2" x="-100%" href="#sineWave" />
+      </svg>
         <section class="container-fluid animate__animated animate__fadeInDown">
           <div class="row">
             <div class="col-sm">
@@ -824,6 +908,7 @@
               </div>
             </div>
             <div class="col-sm">
+              <!-- https://img.freepik.com/free-vector/learning-concept-illustration_114360-6186.jpg?w=826&t=st=1661941601~exp=1661942201~hmac=8c662801d7e258b055b077c782391e315d103ee8d558bda9a8efa0185345a749 -->
               <img class="vector-1 animate__animated animate__fadeInDown" src="img/vector-1.png" alt="" />
             </div>
           </div>
@@ -831,6 +916,7 @@
       <section class="container-fluid animate__animated animate__lightSpeedInLeft" style="background-color: #e9c46a;">
         <div class="row">
           <div class="col-sm">
+            <!-- https://img.freepik.com/free-vector/students-brainstorm-projects-send-teachers-receive-test-scores_1150-43289.jpg?w=1480&t=st=1661942835~exp=1661943435~hmac=4eeda9c9b05566fa4bbb19847ea9f0bd373a6a7c5bc53fea79bb9018af8b2842 -->
             <img class="vector-4 animate__animated animate__lightSpeedInLeft" src="img/vector-4.png" alt="" />
           </div>
           <div class="col-sm">
@@ -848,6 +934,7 @@
           </div>
         </div>
       </section>
+      <!-- https://getwaves.io/ -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 60 1440 320">
         <path fill="#E9C46A" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,112C640,107,800,117,960,122.7C1120,128,1280,128,1360,128L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
       </svg>
@@ -867,13 +954,14 @@
             </div>
           </div>
           <div class="col-sm">
+            <!-- https://img.freepik.com/free-vector/students-watching-webinar-computer-studying-online_74855-15522.jpg?w=1380&t=st=1661941647~exp=1661942247~hmac=f0a2e4d4d7b763e25130a276f8f2180b0405c6f4d5d9baa3f7accfc0b057b6d2 -->
             <img class="vector-2 animate__animated animate__fadeInDown" src="img/vector-2.png" alt="" />
           </div>
         </div>
       </section>
-      <section class="container-fluid" style="background-color: #E76F51">
+      <section class="container-fluid" style="background-color: #E76F51; opacity: 90%;">
         <div class="row">
-          <div class="teknik-belajar col animate__animated animate__backInDown">Teknik Belajar Mandiri</div>
+          <div class="teknik-belajar col animate__animated animate__backInDown" style="padding-top: 100px;">Teknik Belajar Mandiri</div>
         </div>
         <div class="row">
           <center>
@@ -883,10 +971,65 @@
           </center>
         </div>
       </section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E76F51" fill-opacity="0.95" d="M0,128L48,117.3C96,107,192,85,288,85.3C384,85,480,107,576,128C672,149,768,171,864,170.7C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+      <!-- https://codepen.io/pushkar8723/pen/eYJQVvE -->
+      <svg viewbox="0 10 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style type="text/css">
+            .wave {
+              animation: wave 8s linear infinite;
+            }
+      
+            .wave1 {
+              animation: wave1 10s linear infinite;
+            }
+      
+            .wave2 {
+              animation: wave2 12s linear infinite;
+            }
+      
+            @keyframes wave {
+              0% {
+                transform: translateX(0%);
+              }
+      
+              100% {
+                transform: translateX(100%);
+              }
+            }
+      
+            @keyframes wave1 {
+              0% {
+                transform: scaleY(1.2) translateX(0%);
+              }
+      
+              100% {
+                transform: scaleY(1.2) translateX(100%);
+              }
+            }
+      
+            @keyframes wave2 {
+              0% {
+                transform: scaleY(.8) translateX(0%);
+              }
+      
+              100% {
+                transform: scaleY(.8) translateX(100%);
+              }
+            }
+          </style>
+          <path id='sineWave' fill="#0099ff" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+        </defs>
+        <use class="wave" href="#sineWave" />
+        <use class="wave" x="-100%" href="#sineWave" />
+        <use class="wave1" href="#sineWave" />
+        <use class="wave1" x="-100%" href="#sineWave" />
+        <use class="wave2" href="#sineWave" />
+        <use class="wave2" x="-100%" href="#sineWave" />
+      </svg>
       <section class="container-fluid animate__animated animate__backInLeft">
         <div class="row">
           <div class="col-sm">
+            <!-- https://img.freepik.com/free-vector/lecture-time-concept-illustration_52683-26701.jpg?w=1380&t=st=1661942391~exp=1661942991~hmac=8a39d572c0c32ed4c3312680fc78a379b8cba665f20006ff2ba621f647eac60a -->
             <img class="vector-5" src="img/vector-5.png" alt="" />
           </div>
           <div class="col-sm">
@@ -921,6 +1064,7 @@
             </div>
           </div>
           <div class="col-sm">
+            <!-- https://img.freepik.com/free-vector/financial-online-courses-adults_23-2148515787.jpg?w=1380&t=st=1661944410~exp=1661945010~hmac=3c791dea168a6022f6d493ddcb23291b511a8381a78770dcc297dc68d286fb18 -->
             <img class="vector-3" src="img/vector-3.png" alt="" />
           </div>
         </div>
@@ -928,6 +1072,7 @@
       <section class="container-fluid animate__animated animate__backInLeft">
         <div class="row">
           <div class="col-sm">
+            <!-- https://img.freepik.com/free-vector/app-learn-languages_52683-43478.jpg?w=1380&t=st=1661942542~exp=1661943142~hmac=4ff91334759fef209a483ea5571534a9a7852f4c0cc39159cf992ce2714118a1 -->
             <img class="vector-7" src="img/vector-7.png" alt="" />
           </div>
           <div class="col-sm">
@@ -945,18 +1090,96 @@
           </div>
         </div>
       </section>
+      <!-- https://getwaves.io/ -->
       <svg class="animate__animated animate__fadeIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 1440 320"><path fill="#264653" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,106.7C384,96,480,96,576,117.3C672,139,768,181,864,181.3C960,181,1056,139,1152,128C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
       <div class="footer container-fluid animate__animated animate__fadeIn">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
-          <p class="col-md-6 mb-0" style="color: white">&copy; Copyright 2022. All Rights Reserved</p>
-          <ul class="nav col-md-6 justify-content-end">
-            <li class="nav-item"><a href="index.html" style="color: white" class="nav-link px-2">Home</a></li>
-            <li class="nav-item"><a href="self-learning.html" style="color: white" class="nav-link px-2">Solusi Belajar Mandiri</a></li>
-            <li class="nav-item"><a href="technologies.html" style="color: white" class="nav-link px-2">Solusi Teknologi</a></li>
-          </ul>
+        <footer class="py-3">
+          <div class="row">
+            <div class="col-sm-4 cpright">
+              <p class="mb-0" style="color: white; text-align: center;">&copy; Copyright 2022. All Rights Reserved</p>
+            </div>
+            <div class="tengah col-sm-4">
+              <img class="udayana" src="img/udayana.png" alt="">
+              <p style="color: white;">Universitas Udayana</p>
+            </div>
+            <div class="col-sm-4">
+              <div class="list" style="text-align: center;">
+                <a href="index.html" style="color: white;" class="flink">Home</a>
+                <a href="technologies.html" style="color: white" class="flink">Solusi Teknologi</a>
+              </div>
+            </div>
+          </div>
         </footer>
       </div>
     </div>
     <script src="vendor/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/@mojs/core/dist/mo.umd.js"></script>
+
+    <script>
+      const circle = new mojs.Shape({
+            left:0,
+            top:0,
+            strokeWidth: 8,
+            fill:'none',
+            radius:80,
+            scale:{0:1},
+            opacity:{10:0},
+            shape:'circle',
+            // shape:'line',
+            // shape:'rect',
+            // shape:'polygon',
+            // shape:'curve',
+            // shape:'zigzag',
+            // shape:'cross',
+            // shape:'equal',
+            stroke:'pink',
+            strokeWidth:8,
+            fill:'none',
+            duration:500,
+        });
+
+        const burst = new mojs.Burst({
+            count:10,
+            left:0,
+            top:0,
+            children:{
+                shape:['circle', 'rect', 'curve', 'polygon'],
+                fill:['yellow', 'red', 'green', 'blue'],
+                degreeShift:'rand(-360, 360)',
+                delay: 'stagger(0, 30)'
+            },
+            duration:400
+        });
+
+        const bang = new mojs.Burst({
+            left:0,
+            top:0,
+            radius:{2:40},
+            angle:45,
+            count:8,
+            children:{
+                radius:8,
+                fill:'orange',
+                scale:{1:0, easing:'sin.in'},
+                pathScale:[0.7, null],
+                duration:[500, 700],
+                degreeShift:[13, null],
+            }
+        });
+
+        document.onclick = (e) => {
+            const position = {
+                x: e.pageX,
+                y: e.pageY
+            }
+
+            circle.tune(position);
+            circle.replay();
+            burst.tune(position);
+            burst.replay();
+            bang.tune(position);
+            bang.replay();
+        }
+  </script>
   </body>
 </html>

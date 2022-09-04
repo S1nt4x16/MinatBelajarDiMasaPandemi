@@ -129,6 +129,14 @@
       .bgfooter {
         background-color: #264653;
       }
+      .uni {
+        color: white;
+        font-size: 25px;
+      }
+      .image-uda {
+        width: 200px;
+        margin-top: 20px;
+      }
       @media only screen and (max-width: 1024px) {
         .navbarsolusi {
           padding-left: 500px;
@@ -248,6 +256,12 @@
         }
         .footer-59391 .copyright {
           padding-top: 30px;
+        }
+        .uni {
+          color: white;
+        }
+        .image-uda {
+          width: 200px;
         }
       }
       @media only screen and (max-width: 768px) {
@@ -382,6 +396,14 @@
           color: white;
           margin-left: 10px;
           margin-top: 35px;
+        }
+        .uni {
+          color: white;
+          font-size: 25px;
+        }
+        .image-uda {
+          width: 200px;
+          margin-top: 20px;
         }
       }
       @media only screen and (max-width: 425px) {
@@ -522,6 +544,14 @@
           color: white;
           margin-left: 0px;
           margin-top: 90px;
+        }
+        .uni {
+          color: white;
+          font-size: 25px;
+        }
+        .image-uda {
+          width: 200px;
+          margin-top: 20px;
         }
       }
       @media only screen and (max-width:375px) {
@@ -664,6 +694,14 @@
           margin-left: 0px;
           margin-top: 80px;
         }
+        .uni {
+          color: white;
+          font-size: 25px;
+        }
+        .image-uda {
+          width: 200px;
+          margin-top: 20px;
+        }
       }
     </style>
 </head>
@@ -699,6 +737,7 @@
       <div class="container-fluid">
         <div class="row" style="background-color: #e76f51;">
           <div class="col-sm-6">
+            <!-- https://www.freepik.com/free-vector/computer-monitor-graphic-animator-creating-video-game-modeling-motion-processing-video-file-using-professional-editor-vector-illustration-graphic-design-art-designer-workplace-concept_11671412.htm#query=komputer&position=0&from_view=search -->
             <img class="animate__animated animate__slideInLeft vector-1" src="assets/technologies/vectorcomputer.png" alt="">
           </div>
           <div class="col-sm-6" style="margin-top: 155px; text-align: left;">
@@ -821,22 +860,34 @@
     <!-- third page end -->
 
     <!-- Footer Start -->
-    <footer class="footer-59391 ft-e bgfooter">
+    <footer class="footer-59391 ft-e" style="background-color: #264653;">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-6">
             <div class="site-logo">
-              <a href="." style="color: white;"><img src="img/kopasus.png" width="70px" alt="">Kopasus IT | RPL</a>
+              <a href="." style="color: white;"><img src="image/fav.png" width="70px" alt=""> Kopasus IT | RPL</a>
+              <div class="row">
+                <div class="col-md-12">
+              <ul class="list-unstyled social-icons">
+                <li><a href="#" class="fb"><span class="icon-facebook"></span></a></li>
+                <li><a href="#" class="tw"><span class="icon-twitter"></span></a></li>
+                <li><a href="#" class="in"><span class="icon-instagram"></span></a></li>
+                <li><a href="#" class="yt"><span class="icon-play"></span></a></li>
+              </ul>
+            </div>
+            </div>
             </div>
             &nbsp;
-          </div>
-          <div class="col-md-12 text-md-right">
-            <ul class="list-unstyled social-icons">
-              <li><a href="#" class="fb"><span class="icon-facebook"></span></a></li>
-              <li><a href="#" class="tw"><span class="icon-twitter"></span></a></li>
-              <li><a href="#" class="in"><span class="icon-instagram"></span></a></li>
-              <li><a href="#" class="yt"><span class="icon-play"></span></a></li>
-            </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="sponsor">
+                <a href="#">
+                  <b class="uni">Sponsored By <br> Universitas Udayana</b>
+                </a>
+              </div>
+              <div>
+                <img class="image-uda" src="image/udayana.png" alt="">
+              </div>
           </div>
         </div>
         <div class="row mb-5">
@@ -859,5 +910,73 @@
     </footer>
     <!-- Footer End -->
     <script src="vendor/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/@mojs/core/dist/mo.umd.js"></script>
+
+    <script>
+      const circle = new mojs.Shape({
+            left:0,
+            top:0,
+            strokeWidth: 8,
+            fill:'none',
+            radius:80,
+            scale:{0:1},
+            opacity:{10:0},
+            shape:'circle',
+            // shape:'line',
+            // shape:'rect',
+            // shape:'polygon',
+            // shape:'curve',
+            // shape:'zigzag',
+            // shape:'cross',
+            // shape:'equal',
+            stroke:'pink',
+            strokeWidth:8,
+            fill:'none',
+            duration:500,
+        });
+
+        const burst = new mojs.Burst({
+            count:10,
+            left:0,
+            top:0,
+            children:{
+                shape:['circle', 'rect', 'curve', 'polygon'],
+                fill:['yellow', 'red', 'green', 'blue'],
+                degreeShift:'rand(-360, 360)',
+                delay: 'stagger(0, 30)'
+            },
+            duration:400
+        });
+
+        const bang = new mojs.Burst({
+            left:0,
+            top:0,
+            radius:{2:40},
+            angle:45,
+            count:8,
+            children:{
+                radius:8,
+                fill:'orange',
+                scale:{1:0, easing:'sin.in'},
+                pathScale:[0.7, null],
+                duration:[500, 700],
+                degreeShift:[13, null],
+            }
+        });
+
+        document.onclick = (e) => {
+            const position = {
+                x: e.pageX,
+                y: e.pageY
+            }
+
+            circle.tune(position);
+            circle.replay();
+            burst.tune(position);
+            burst.replay();
+            bang.tune(position);
+            bang.replay();
+        }
+    </script>
 </body>
 </html>

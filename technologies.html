@@ -9,10 +9,23 @@
     <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
     <link rel="icon" href="img/kopasus.png">
     <link rel="stylesheet" href="devin.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <title>Technologies Page</title>
     <style>
       body {
         cursor: url('cursor/cursor\ \(3\).cur'), auto;
+      }
+
+      .footer-59391 {
+        padding-top: 4rem;
+      }
+
+      .sponsor {
+        text-align: center;
+        margin-left: 130px;
+      }
+      .navbar-collapse {
+        flex-grow: 0;
       }
 
       .navbar-collapse {
@@ -142,10 +155,32 @@
         color: white;
         font-size: 25px;
       }
-      .image-uda {
-        width: 200px;
-        margin-top: 20px;
+
+      .social-icons {
+        margin-top: 30px;
+        margin-left: 10px;
       }
+      .footer-59391 {
+        padding: 2rem 0;
+      }
+
+
+      @media only screen and (max-width: 1440px) {
+        .image-uda {
+          width: 300px;
+          margin-top: 20px;
+          margin-left: 235px
+        }
+      }
+
+      @media only screen and (max-width: 1366px) {
+        .image-uda {
+          width: 300px;
+          margin-top: 20px;
+          margin-left: 190px
+        }
+      }
+
       @media only screen and (max-width: 1024px) {
         .navbarsolusi {
           padding-left: 400px;
@@ -268,6 +303,9 @@
         .footer-59391 {
           padding: 1rem 0;
         }
+        .footer-59391.ft-e {
+          padding-top: 2rem;
+        }
         .footer-59391 .copyright {
           padding-top: 30px;
         }
@@ -275,9 +313,11 @@
           color: white;
         }
         .image-uda {
-          width: 200px;
+          width: 300px;
+          margin-left: 145px;
         }
       }
+
       @media only screen and (max-width: 768px) {
         .bgjudul { 
           background-color: #e76f51;
@@ -423,8 +463,9 @@
           font-size: 25px;
         }
         .image-uda {
-          width: 200px;
+          width: 250px;
           margin-top: 20px;
+          margin-left: 110px
         }
       }
       @media only screen and (max-width: 425px) {
@@ -570,6 +611,10 @@
           margin-left: 0px;
           margin-top: 90px;
         }
+        .sponsor {
+          text-align: center;
+          margin-left: 10px;
+        }
         .uni {
           color: white;
           font-size: 25px;
@@ -577,6 +622,16 @@
         .image-uda {
           width: 200px;
           margin-top: 20px;
+          margin-left: 110px;
+        }
+
+        .social-icons {
+          margin-top: 30px;
+          margin-left: 120px;
+        }
+
+        .nav-links {
+          margin-left: 85px;
         }
       }
       @media only screen and (max-width:375px) {
@@ -732,6 +787,15 @@
         .image-uda {
           width: 200px;
           margin-top: 20px;
+          margin-left: 80px
+        }
+        .social-icons {
+          margin-top: 30px;
+          margin-left: 95px;
+        }
+
+        .nav-links {
+          margin-left: 55px;
         }
       }
     </style>
@@ -781,12 +845,12 @@
     
     <!-- second page start -->
     <section class="bgsec-1">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="1000">
         <div class="row text-center">
-          <h2 class="animate__animated animate__pulse" style="color: white; margin-top: 25px;">Keresahan Yang Dialami Saat Masa Pandemi</h2>
+          <h2 class="animate__animated animate__fadeInDown" style="color: white; margin-top: 25px;">Keresahan Yang Dialami Saat Masa Pandemi</h2>
         </div>
       </div>
-      <div class="container-fluid mt-6">
+      <div class="container-fluid mt-6" data-aos="fade-in" data-aos-duration="3000">
         <div class="row">
           <div class="col-md-4">
             <!-- https://www.freepik.es/vector-premium/conexion-inalambrica-perdida-o-cable-desconectado-internet-senal-wifi-pagina-no-encontrada-pantalla-telefono-inteligente-ilustracion-vector-fondo_19763812.htm -->
@@ -798,7 +862,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid mt-6">
+      <div class="container-fluid mt-6" data-aos="fade-in" data-aos-duration="3000">
         <div class="row">
           <div class="col-md-7 tekskeresahan-2">
             <h3 class="animate__animated animate__fadeIn">Berkurangnya Interaksi Dengan Pengajar</h3>
@@ -810,7 +874,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid mt-6">
+      <div class="container-fluid mt-6" data-aos="fade-in" data-aos-duration="3000">
         <div class="row">
           <div class="col-md-4">
             <!-- https://www.freepik.com/free-vector/curiosity-people-concept-illustration_29979597.htm#query=understand&position=44&from_view=search -->
@@ -822,7 +886,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid mt-6">
+      <div class="container-fluid mt-6" data-aos="fade-in" data-aos-duration="3000">
         <div class="row">
           <div class="col-md-7 tekskeresahan-4">
             <h3 class="animate__animated animate__fadeIn">Minimnya Pengawas dalam Belajar</h3>
@@ -841,10 +905,10 @@
     <section class="bgsec-2">
       <div class="container">
         <div class="row text-center" style="background-color: #e76f51;">
-          <h2 class="animate__animated animate__pulse" style="color: white; margin-top: 25px;">Strategi/Solusi Teknologi Dalam Masa Pandemi</h2>
+          <h2 class="animate__animated" data-aos="fade-down" data-aos-duration="1000" style="color: white; margin-top: 25px;">Strategi/Solusi Teknologi Dalam Masa Pandemi</h2>
         </div>
       </div>
-      <div class="container-fluid mt-6">
+      <div class="container-fluid mt-6" data-aos="fade-in" data-aos-duration="3000">
         <div class="row">
           <div class="col-md-4">
             <!-- https://www.freepik.com/free-vector/internet-day-concept-illustration_12977742.htm#query=internet&position=27&from_view=search -->
@@ -856,7 +920,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid mt-6">
+      <div class="container-fluid mt-6" data-aos="fade-in" data-aos-duration="3000">
         <div class="row">
           <div class="col-sm-7 tekssolusi-2">
             <div class="tekssolusi-21">
@@ -870,7 +934,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid mt-6">
+      <div class="container-fluid mt-6" data-aos="fade-in" data-aos-duration="3000">
         <div class="row">
           <div class="col-md-4">
             <!-- https://www.freepik.com/free-vector/learning-concept-illustration_14230944.htm#query=knowledge%20sharing&position=12&from_view=search -->
@@ -882,7 +946,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid mt-6">
+      <div class="container-fluid mt-6" data-aos="fade-in" data-aos-duration="3000">
         <div class="row">
           <div class="col-md-7 tekssolusi-4">
             <h3 class="animate__animated animate__fadeIn">Teknologi Informasi</h3>
@@ -951,9 +1015,7 @@
     <script src="vendor/@mojs/core/dist/mo.umd.js"></script>
     <script src="vendor/animejs/lib/anime.min.js"></script>
 
-  
-
-    <!-- <script>
+    <script>
       const circle = new mojs.Shape({
             left:0,
             top:0,
@@ -1018,6 +1080,10 @@
             bang.tune(position);
             bang.replay();
         }
-    </script> -->
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

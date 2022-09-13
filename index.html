@@ -650,7 +650,7 @@
     @media only screen and (max-width: 375px) {
 
       .pcol {
-        margin-left: 200px;
+        margin-left: 180px;
       }
 
       .sponsor {
@@ -674,13 +674,12 @@
 
       .dropdown-menu {
         width: 12rem;
-        margin-left: 150px;
+        margin-left: 120px;
       }
 
       .img-hei{
         height: 350px;
-        width: 350px;
-        margin-left: 2px;
+        width: 340px;
       }
 
       .mar-card2 {
@@ -1102,33 +1101,6 @@
   </script>
 
   <script>
-    // anime({
-    //   targets: '.para',
-    //   translateX: [
-    //     { value: 250, duration: 1000, delay: 500 },
-    //     { value: 0, duration: 1000, delay: 500 }
-    //   ],
-    //   translateY: [
-    //     { value: -40, duration: 500 },
-    //     { value: 40, duration: 500, delay: 1000 },
-    //     { value: 0, duration: 500, delay: 1000 }
-    //   ],
-    //   scaleX: [
-    //     { value: 4, duration: 100, delay: 500, easing: 'easeOutExpo' },
-    //     { value: 1, duration: 900 },
-    //     { value: 4, duration: 100, delay: 500, easing: 'easeOutExpo' },
-    //     { value: 1, duration: 900 }
-    //   ],
-    //   scaleY: [
-    //     { value: [1.75, 1], duration: 500 },
-    //     { value: 2, duration: 50, delay: 1000, easing: 'easeOutExpo' },
-    //     { value: 1, duration: 450 },
-    //     { value: 1.75, duration: 50, delay: 1000, easing: 'easeOutExpo' },
-    //     { value: 1, duration: 450 }
-    //   ],
-    //   easing: 'easeOutElastic(1, .8)',
-    //   loop: false
-    // });
 
     anime({
       targets: '.tema',
@@ -1140,73 +1112,6 @@
       loop: true
     });
   </script>
-
-  <!-- <script>
-      const circle = new mojs.Shape({
-            left:0,
-            top:0,
-            strokeWidth: 8,
-            fill:'none',
-            radius:40,
-            scale:{0:1},
-            opacity:{10:0},
-            shape:'circle',
-            // shape:'line',
-            // shape:'rect',
-            // shape:'polygon',
-            // shape:'curve',
-            // shape:'zigzag',
-            // shape:'cross',
-            // shape:'equal',
-            stroke:'pink',
-            strokeWidth:8,
-            fill:'none',
-            duration:500,
-        });
-
-        const burst = new mojs.Burst({
-            count:10,
-            left:0,
-            top:0,
-            children:{
-                shape:['circle', 'rect', 'curve', 'polygon'],
-                fill:['yellow', 'red', 'green', 'blue'],
-                degreeShift:'rand(-360, 360)',
-                delay: 'stagger(0, 30)'
-            },
-            duration:400
-        });
-
-        const bang = new mojs.Burst({
-            left:0,
-            top:0,
-            radius:{4:40},
-            angle:45,
-            count:8,
-            children:{
-                radius:8,
-                fill:'orange',
-                scale:{1:0, easing:'sin.in'},
-                pathScale:[0.7, null],
-                duration:[500, 700],
-                degreeShift:[13, null],
-            }
-        });
-
-        document.onclick = (e) => {
-            const position = {
-                x: e.pageX,
-                y: e.pageY
-            }
-
-            circle.tune(position);
-            circle.replay();
-            burst.tune(position);
-            burst.replay();
-            bang.tune(position);
-            bang.replay();
-        }
-  </script> -->
 
   <script>
     (function (document) {

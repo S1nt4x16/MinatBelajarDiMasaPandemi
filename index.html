@@ -783,11 +783,6 @@
         flex-basis: 80%;
       }
 
-      .navflu {
-        margin: 0px!important;
-        padding: 0px!important;
-      }
-
       #cardrev {
         padding: 8px;
       }
@@ -838,7 +833,7 @@
           <b class="minat"> Minat Belajar Di Masa Pandemi</b>
         </div>
         <br>
-        <p class="para animate__animated animate__fadeIn animate__delay-2s" style="color: white;">
+        <p class="para" style="color: white;">
           <b>Covid 19 sangat mempengaruhi minat belajar. Hal itu dikarenakan
             perubahan yang secara tiba tiba
             terjadi dimana kita dipaksa untuk melakukan segala sesuatu secara daring/online. Menumbuhkan Minat Belajar
@@ -1119,33 +1114,33 @@
   </script>
 
   <script>
-    anime({
-      targets: '.para',
-      translateX: [
-        { value: 250, duration: 1000, delay: 500 },
-        { value: 0, duration: 1000, delay: 500 }
-      ],
-      translateY: [
-        { value: -40, duration: 500 },
-        { value: 40, duration: 500, delay: 1000 },
-        { value: 0, duration: 500, delay: 1000 }
-      ],
-      scaleX: [
-        { value: 4, duration: 100, delay: 500, easing: 'easeOutExpo' },
-        { value: 1, duration: 900 },
-        { value: 4, duration: 100, delay: 500, easing: 'easeOutExpo' },
-        { value: 1, duration: 900 }
-      ],
-      scaleY: [
-        { value: [1.75, 1], duration: 500 },
-        { value: 2, duration: 50, delay: 1000, easing: 'easeOutExpo' },
-        { value: 1, duration: 450 },
-        { value: 1.75, duration: 50, delay: 1000, easing: 'easeOutExpo' },
-        { value: 1, duration: 450 }
-      ],
-      easing: 'easeOutElastic(1, .8)',
-      loop: false
-    });
+    // anime({
+    //   targets: '.para',
+    //   translateX: [
+    //     { value: 250, duration: 1000, delay: 500 },
+    //     { value: 0, duration: 1000, delay: 500 }
+    //   ],
+    //   translateY: [
+    //     { value: -40, duration: 500 },
+    //     { value: 40, duration: 500, delay: 1000 },
+    //     { value: 0, duration: 500, delay: 1000 }
+    //   ],
+    //   scaleX: [
+    //     { value: 4, duration: 100, delay: 500, easing: 'easeOutExpo' },
+    //     { value: 1, duration: 900 },
+    //     { value: 4, duration: 100, delay: 500, easing: 'easeOutExpo' },
+    //     { value: 1, duration: 900 }
+    //   ],
+    //   scaleY: [
+    //     { value: [1.75, 1], duration: 500 },
+    //     { value: 2, duration: 50, delay: 1000, easing: 'easeOutExpo' },
+    //     { value: 1, duration: 450 },
+    //     { value: 1.75, duration: 50, delay: 1000, easing: 'easeOutExpo' },
+    //     { value: 1, duration: 450 }
+    //   ],
+    //   easing: 'easeOutElastic(1, .8)',
+    //   loop: false
+    // });
 
     anime({
       targets: '.tema',

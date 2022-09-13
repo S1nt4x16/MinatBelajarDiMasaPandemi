@@ -10,9 +10,14 @@
   <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="vendor/bootstrap-5.2.0-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="vendor/fonts/icomoon/style.css">
-  <link rel="stylesheet" href="valen.css">
-  <link rel="stylesheet" href="valen2.css">
+  <link rel="stylesheet" href="css/valen.css">
+  <link rel="stylesheet" href="css/valen2.css">
   <style>
+    
+    body {
+      cursor:url('cursor/cursor\ \(3\).cur'), auto;
+    }
+
     .navbar-collapse {
       flex-grow: 0;
     }
@@ -422,12 +427,12 @@
       }
 
       .pcol {
-        margin-left: 600px;
+        margin-left: 580px;
       }
 
       .dropdown-menu {
         width: 13rem;
-        margin-left: 540px;
+        margin-left: 520px;
       }
 
       .mar-card2 {
@@ -487,7 +492,7 @@
     @media only screen and (max-width: 425px) {
       
       .pcol {
-        margin-left: 260px;
+        margin-left: 240px;
       }
 
       .image-uda {
@@ -511,7 +516,7 @@
 
       .dropdown-menu {
         width: 13rem;
-        margin-left: 195px;
+        margin-left: 180px;
       }
 
       .img-hei{
@@ -645,7 +650,7 @@
     @media only screen and (max-width: 375px) {
 
       .pcol {
-        margin-left: 220px;
+        margin-left: 200px;
       }
 
       .sponsor {
@@ -669,7 +674,7 @@
 
       .dropdown-menu {
         width: 12rem;
-        margin-left: 160px;
+        margin-left: 150px;
       }
 
       .img-hei{
@@ -767,9 +772,20 @@
       }
 
       .scroller {
-      width: 9em;
-    }
+        width: 9em;
+      }
+      
+      .nav-item {
+        width: 1rem;
+      }
 
+      .navbar-collapse {
+        flex-basis: 80%;
+      }
+
+      .container-fluid {
+        margin: 0px;
+      }
   }
   </style>
 </head>
@@ -1143,7 +1159,7 @@
             top:0,
             strokeWidth: 8,
             fill:'none',
-            radius:80,
+            radius:40,
             scale:{0:1},
             opacity:{10:0},
             shape:'circle',
@@ -1176,7 +1192,7 @@
         const bang = new mojs.Burst({
             left:0,
             top:0,
-            radius:{2:40},
+            radius:{4:40},
             angle:45,
             count:8,
             children:{

@@ -18,6 +18,43 @@
       cursor:url('cursor/cursor\ \(3\).cur'), auto;
     }
 
+    .cursor {
+      position: absolute;
+      width: 4rem;
+      height: 4rem;
+      border-radius:50%;
+      border:10px solid orange;
+      transform: translate(-50%, -50%) scale(0); 
+      animation: scale-up .6s;
+    }
+
+    .cursor::after{
+      content:"";
+      left: 50%; 
+      top: 50%;
+      transform: translate(-50%,-50%);
+      position: absolute; 
+      width: 80%;
+      height: 80% ;
+      border-radius: 50%; 
+      border: 10px solid ;
+    }
+
+    @keyframes scale-up {
+
+      0% {
+        transform:translate(-50%,-50%) scale(0); 
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-50%,-50%) scale(1); 
+        opacity: 0;
+      }
+    }
+
     .navbar-collapse {
       flex-grow: 0;
     }
@@ -1132,6 +1169,34 @@
     observer.observe(mark);
   });
 })(document);
+  </script>
+
+<script type="text/javascript">
+
+const createCursor = (x, y) => {
+
+      const cursor = document.createElement('div');
+      cursor.className = 'cursor';
+      cursor.style.left = `${x}px`;
+      cursor.style.top = `${y}px`;
+      return cursor;
+
+  }
+
+    const removeCursorFromDom = cursor => {
+
+      const timeout = setTimeOut(() => {
+        cursor.remove();
+        clearTimeout(timeout);
+      }, 1000)
+    };
+
+
+    window.addEventListener('click', event => {
+      const cursor = createCursor(event.pageX, event.pageY);
+      document.body.append(cursor);
+      removeCursorFromDom(cursor);
+    })
   </script>
 
 </body>
